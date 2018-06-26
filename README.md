@@ -1,3 +1,23 @@
+# FastTrack for Azure
+
+See our [FastTrack for Azure landing page](https://github.com/Azure/FastTrackForAzure) for more information.
+
+
+# Azure in China Scenarios
+
+### Azure Foundations
+  * [IaaS Foundations](iaas-foundations-azurechina.md)
+  * [ARM Foundations](arm-foundations-azurechina.md)
+  * [Governance](governance-azurechina.md)
+
+### Backup, Archive & Disaster Recovery
+  * [Backup and Archive](backup-and-archive-azurechina.md)
+  * [Disaster Recovery with ASR](disaster-recovery-azurechina.md)
+  
+### Internal Business Apps
+  * [Lift and Shift](lift-and-shift-azurechina.md)
+
+
 
 # Contributing
 
