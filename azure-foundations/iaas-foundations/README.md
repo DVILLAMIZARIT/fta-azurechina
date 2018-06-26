@@ -11,8 +11,8 @@ See [Azure in China](https://github.com/Azure/fta-azurechina/) for more scenario
 
 > TODO: info below just for reference 
 
-* [Reference Resources](articles/iaas-foundations-reference-resources.md)
-    * [Azure Overview](articles/iaas-foundations-reference-resources.md#azure-overview)
+* [Reference Resources](articles/iaas-foundations-azurechina-reference-resources.md)
+    * [Azure Overview](articles/iaas-foundations-azurechina-reference-resources.md#azure-overview)
     * ...
     
 ## Walkthroughs
