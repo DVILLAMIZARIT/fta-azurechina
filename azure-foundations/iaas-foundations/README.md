@@ -1,6 +1,7 @@
 # FastTrack for Azure
 
 See our [FastTrack for Azure landing page](https://github.com/Azure/FastTrackForAzure) for more information.
+
 See [Azure in China](https://github.com/Azure/fta-azurechina/) for more scenarios.
 
 
