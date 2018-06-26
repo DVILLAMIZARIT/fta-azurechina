@@ -6,9 +6,9 @@ See our [FastTrack for Azure landing page](https://github.com/Azure/FastTrackFor
 # Azure in China Scenarios
 
 ### Azure Foundations
-  * [IaaS Foundations](azurefoundations/iaas-foundations)
-  * [ARM Foundations](arm-foundations-azurechina.md)
-  * [Governance](governance-azurechina.md)
+  * [IaaS Foundations](azure-foundations/iaas-foundations)
+  * [ARM Foundations](azure-foundations/arm-foundations)
+  * [Governance](azure-foundations/governance)
 
 ### Backup, Archive & Disaster Recovery
   * [Backup and Archive](backup-and-archive-azurechina.md)
