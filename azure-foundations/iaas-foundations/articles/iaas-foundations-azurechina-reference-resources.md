@@ -46,45 +46,26 @@
 
 ## Resource Manager
 
-* Azure Resource Manager overview 
-  * [Global](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview)
-  * [China](https://docs.azure.cn/zh-cn/azure-resource-manager/resource-group-overview)
-* Terminology
-  * [Global](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#terminology)
-  * [China](https://docs.azure.cn/zh-cn/azure-resource-manager/resource-group-overview#terminology)
+* Azure Resource Manager overview ([Global](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview), [China](https://docs.azure.cn/zh-cn/azure-resource-manager/resource-group-overview))
+* Terminology ([Global](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#terminology), [China](https://docs.azure.cn/zh-cn/azure-resource-manager/resource-group-overview#terminology))
 
-* The benefits of using Resource Manager
-  * [Global](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#the-benefits-of-using-resource-manager)
-  * [China](https://docs.azure.cn/zh-cn/azure-resource-manager/resource-group-overview#the-benefits-of-using-resource-manager)
+* The benefits of using Resource Manager ([Global](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#the-benefits-of-using-resource-manager), [China](https://docs.azure.cn/zh-cn/azure-resource-manager/resource-group-overview#the-benefits-of-using-resource-manager))
 
-*  Resource Groups  
-    * [Global](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#resource-groups)
-    * [China](https://docs.azure.cn/zh-cn/azure-resource-manager/resource-group-overview#resource-groups)
+*  Resource Groups ([Global](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#resource-groups), [China](https://docs.azure.cn/zh-cn/azure-resource-manager/resource-group-overview#resource-groups))
 
-* Move resources to new resource group or subscription
-  * [Global](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-move-resources)
-  * [China](https://docs.azure.cn/zh-cn/azure-resource-manager/resource-group-move-resources)
+* Move resources to new resource group or subscription ([Global](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-move-resources), [China](https://docs.azure.cn/zh-cn/azure-resource-manager/resource-group-move-resources))
 
-* Azure PowerShell
-  * [Global](https://docs.microsoft.com/en-us/powershell/azure)
+* Azure PowerShell ([Global](https://docs.microsoft.com/en-us/powershell/azure))
 
-* Azure CLI
-  * [Global](https://docs.microsoft.com/en-us/cli/azure/overview)
-  * [China](https://docs.azure.cn/zh-cn/cli/?view=azure-cli-latest)
+* Azure CLI ([Global](https://docs.microsoft.com/en-us/cli/azure/overview), [China](https://docs.azure.cn/zh-cn/cli/?view=azure-cli-latest))
 
-* Azure Rest API 
-  * [Global](https://docs.microsoft.com/en-us/rest/api/)
-  * [China](https://docs.microsoft.com/en-us/rest/api/)
+* Azure Rest API ([Global](https://docs.microsoft.com/en-us/rest/api/), [China](https://docs.microsoft.com/en-us/rest/api/))
 
-* ARM Template
-  * [Global](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#template-deployment)
-  * [China](https://docs.azure.cn/zh-cn/azure-resource-manager/resource-group-overview#template-deployment)
+* ARM Template ([Global](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#template-deployment), [China](https://docs.azure.cn/zh-cn/azure-resource-manager/resource-group-overview#template-deployment))
 
 * [Azure Quickstart Templates](https://azure.microsoft.com/en-us/resources/templates/)
 
-* Export an Azure Resource Manager template from existing resources
-  * [Global](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-export-template)
-  * [China](https://docs.azure.cn/azure-resource-manager/resource-manager-export-template)
+* Export an Azure Resource Manager template from existing resources ([Global](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-export-template), [China](https://docs.azure.cn/azure-resource-manager/resource-manager-export-template))
 
 
 ## Storage
