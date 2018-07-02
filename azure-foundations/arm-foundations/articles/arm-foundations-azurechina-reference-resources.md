@@ -64,6 +64,6 @@ If you have not been through our session, why not consider getting in touch with
 
 ## Recommended Practices
 
-* [Best practices for creating Azure Resource Manager templates](https://docs.microsoft.com/en-gb/azure/azure-resource-manager/resource-group-authoring-templates)
+* [Best practices for creating Azure Resource Manager templates](https://github.com/Azure/azure-quickstart-templates/blob/master/1-CONTRIBUTION-GUIDE/best-practices.md)
 
 * [Design patterns for Azure Resource Manager templates when deploying complex solutions](https://docs.microsoft.com/en-us/azure/azure-resource-manager/best-practices-resource-manager-design-templates)
