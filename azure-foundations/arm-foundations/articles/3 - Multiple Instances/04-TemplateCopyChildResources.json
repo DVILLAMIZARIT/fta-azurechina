@@ -8,8 +8,8 @@
         "regions": {
             "type": "array",
             "defaultValue": [
-                "North Europe",
-                "West Europe"
+                "China North",
+                "China East"
             ]
         }
     },

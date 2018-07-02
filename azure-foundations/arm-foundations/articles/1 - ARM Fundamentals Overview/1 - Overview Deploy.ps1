@@ -1,7 +1,7 @@
-﻿Login-AzureRmAccount
+﻿Login-AzureRmAccount -Environment AzureChinaCloud
 
 $resourceGroupName = "fta-fun-armtemp-rg2"
-New-AzureRmResourceGroup -Name $resourceGroupName -Location "UK West"
+New-AzureRmResourceGroup -Name $resourceGroupName -Location "China North"
 
 #First show the incremental mode of deploying. Once complete, uncomment line 13. - show the rg in the portal
 New-AzureRmResourceGroupDeployment -ResourceGroupName $resourceGroupName -Mode Incremental -TemplateFile "azuredeploy.json" -TemplateParameterFile "azuredeploy.parameters.json" 

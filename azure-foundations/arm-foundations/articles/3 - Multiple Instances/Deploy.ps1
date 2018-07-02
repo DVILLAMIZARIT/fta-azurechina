@@ -1,7 +1,7 @@
-﻿Login-AzureRmAccount
+﻿Login-AzureRmAccount -Environment AzureChinaCloud
 
 $resourceGroupName = "fta-fun-instances-rg"
-$resourceGroupLocation = "North Europe"
+$resourceGroupLocation = "China North"
 New-AzureRmResourceGroup -Name $resourceGroupName -Location $resourceGroupLocation
 
 New-AzureRmResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateFile "01-TemplateCopyParallel.json"

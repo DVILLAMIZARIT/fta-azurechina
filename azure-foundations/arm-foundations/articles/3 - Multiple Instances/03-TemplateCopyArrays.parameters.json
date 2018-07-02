@@ -4,8 +4,8 @@
   "parameters": {
     "regions": {
       "value": [
-        "North Europe",
-        "West Europe"
+        "China North",
+        "China East"
       ]
     }
   }
