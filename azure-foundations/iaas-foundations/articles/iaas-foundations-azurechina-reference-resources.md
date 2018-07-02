@@ -70,9 +70,7 @@
 
 ## Storage
 
-* Azure Storage
-  * [Global](https://docs.microsoft.com/en-us/azure/storage/)
-  * [China](https://docs.azure.cn/zh-cn/storage/)
+* Azure Storage ([Global](https://docs.microsoft.com/en-us/azure/storage/), [China](https://docs.azure.cn/zh-cn/storage/))
 * Introduction to Microsoft Azure Storage ([Global](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction), [China](https://docs.azure.cn/zh-cn/storage/common/storage-introduction))
 * Types of storage accounts ([Global](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction#types-of-storage-accounts), [China](https://docs.azure.cn/zh-cn/storage/common/storage-introduction))
   * General-purpose Standard	
@@ -148,17 +146,4 @@
 * Design Review Checklists ([Global](https://docs.microsoft.com/en-us/azure/architecture/checklist/))
 
 * Azure security best practices and patterns ([Global](https://docs.microsoft.com/en-us/azure/security/security-best-practices-and-patterns))
-
-
-
-## Azure Planned Maintenance
-
-* [Official Azure blog post on vulnerability and our maintenance](https://azure.microsoft.com/en-us/blog/securing-azure-customers-from-cpu-vulnerability/)
-
-* [Azure documentation page with Frequently Asked Questions](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/accelerated-maintenance)
-
-* [Guidance for mitigating speculative execution side-channel vulnerabilities](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/mitigate-se)
-​
-* [Security TechCenter Advisory: Guidance for Windows​](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV180002)
-
 

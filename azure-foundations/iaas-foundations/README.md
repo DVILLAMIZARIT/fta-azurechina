@@ -18,7 +18,7 @@ See [Azure in China](https://github.com/Azure/fta-azurechina/) for more scenario
     * [Networking](articles/iaas-foundations-azurechina-reference-resources.md#networking)
     * [Architectural design best practices & guidance](articles/iaas-foundations-azurechina-reference-resources.md#architectural-design-best-practices--guidance)
     * [Azure Planned Maintenance](articles/iaas-foundations-azurechina-reference-resources.md#azure-planned-maintenance)
-    * [Sovereign Clouds](articles/iaas-foundations-azurechina-reference-resources.md#sovereign-clouds)
+
     
 ## Walkthroughs
 
