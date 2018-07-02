@@ -45,7 +45,7 @@ After completing the exercises in this walkthrough, you will be able to:
 * Be familiar with the foundations of Azure Networking
 * Be familiar with the foundations of Azure Storage
 * Be familiar with the foundations of Azure Compute
-* Review [Reference Resources](iaas-foundations-reference-resources.md) if nedded.
+* Review [Reference Resources](iaas-foundations-azurechina-reference-resources.md) if nedded.
 
 
 # Estimated time to complete this module
