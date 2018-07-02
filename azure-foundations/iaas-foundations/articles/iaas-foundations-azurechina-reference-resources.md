@@ -94,7 +94,7 @@
 * Images versus snapshots([Global](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/managed-disks-overview#images-versus-snapshots), [China](https://docs.azure.cn/virtual-machines/windows/managed-disks-overview#images-versus-snapshots))
 
 * Managed Disks and Encryption ([Global](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/managed-disks-overview#managed-disks-and-encryption), [China](https://docs.azure.cn/virtual-machines/windows/managed-disks-overview#managed-disks-and-encryption))
-* Azure Files ([Global])(https://docs.microsoft.com/en-us/azure/storage/files/storage-files-introduction), [China](https://docs.azure.cn/storage/files/storage-files-introduction))
+* Azure Files ([Global](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-introduction), [China](https://docs.azure.cn/storage/files/storage-files-introduction))
 
 * Azure Files FAQ ([Global](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-faq), [China](https://docs.azure.cn/storage/files/storage-files-faq))
 
