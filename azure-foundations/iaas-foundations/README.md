@@ -9,16 +9,16 @@ See [Azure in China](https://github.com/Azure/fta-azurechina/) for more scenario
 
 ## Reference Resources
 
-* [Reference Resources](articles/iaas-foundations-reference-resources.md)
-    * [Azure Overview](articles/iaas-foundations-reference-resources.md#azure-overview)
-    * [Core IaaS Services](articles/iaas-foundations-reference-resources.md#core-iaas-services)
-    * [Resource Manager](articles/iaas-foundations-reference-resources.md#resource-manager)
-    * [Storage](articles/iaas-foundations-reference-resources.md#storage)
-    * [Compute](articles/iaas-foundations-reference-resources.md#compute)
-    * [Networking](articles/iaas-foundations-reference-resources.md#networking)
-    * [Architectural design best practices & guidance](articles/iaas-foundations-reference-resources.md#architectural-design-best-practices--guidance)
-    * [Azure Planned Maintenance](articles/iaas-foundations-reference-resources.md#azure-planned-maintenance)
-    * [Sovereign Clouds](articles/iaas-foundations-reference-resources.md#sovereign-clouds)
+* [Reference Resources](articles/iaas-foundations-azurechina-reference-resources.md)
+    * [Azure Overview](articles/iaas-foundations-azurechina-reference-resources.md#azure-overview)
+    * [Core IaaS Services](articles/iaas-foundations-azurechina-reference-resources.md#core-iaas-services)
+    * [Resource Manager](articles/iaas-foundations-azurechina-reference-resources.md#resource-manager)
+    * [Storage](articles/iaas-foundations-azurechina-reference-resources.md#storage)
+    * [Compute](articles/iaas-foundations-azurechina-reference-resources.md#compute)
+    * [Networking](articles/iaas-foundations-azurechina-reference-resources.md#networking)
+    * [Architectural design best practices & guidance](articles/iaas-foundations-azurechina-reference-resources.md#architectural-design-best-practices--guidance)
+    * [Azure Planned Maintenance](articles/iaas-foundations-azurechina-reference-resources.md#azure-planned-maintenance)
+    * [Sovereign Clouds](articles/iaas-foundations-azurechina-reference-resources.md#sovereign-clouds)
     
 ## Walkthroughs
 
