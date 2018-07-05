@@ -8,14 +8,14 @@ See our [FastTrack for Azure landing page](https://github.com/Azure/FastTrackFor
 ## Reference Resources
 
 * [Reference Resources](articles/disaster-recovery-azurechina-reference-resources.md)
-    * [Azure Site Recovery Overview](articles/disaster-recovery-azurechina-reference-resources.md#Azure-Site-Recovery-Overview)
-    * [Capacity Plan](articles/disaster-recovery-azurechina-reference-resources.md#Capacity-Plan)
-    * [Recovery Vault](articles/disaster-recovery-azurechina-reference-resources.md#Recovery-Vault)
-    * [Replication Architecture](articles/disaster-recovery-azurechina-reference-resources.md#Replication-Architecture)
-    * [Prepare Infrastructure](articles/disaster-recovery-azurechina-reference-resources.md#Prepare-Infrastructure)
-    * [Manage Replication Data](articles/disaster-recovery-azurechina-reference-resources.md#Manage-Replication-Data)
-    * [Failover](articles/disaster-recovery-azurechina-reference-resources.md#Failover)
-    * [Other](articles/disaster-recovery-azurechina-reference-resources.md#Other)
+    * [Azure Site Recovery Overview](articles/disaster-recovery-azurechina-reference-resources.md#azure-site-recovery-overview)
+    * [Capacity Plan](articles/disaster-recovery-azurechina-reference-resources.md#capacity-plan)
+    * [Recovery Vault](articles/disaster-recovery-azurechina-reference-resources.md#recovery-vault)
+    * [Replication Architecture](articles/disaster-recovery-azurechina-reference-resources.md#replication-architecture)
+    * [Prepare Infrastructure](articles/disaster-recovery-azurechina-reference-resources.md#prepare-infrastructure)
+    * [Manage Replication Data](articles/disaster-recovery-azurechina-reference-resources.md#manage-replication-data)
+    * [Failover](articles/disaster-recovery-azurechina-reference-resources.md#failover)
+    * [Other](articles/disaster-recovery-azurechina-reference-resources.md#other)
     
 ## Walkthroughs
 
