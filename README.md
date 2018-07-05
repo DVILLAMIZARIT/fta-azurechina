@@ -16,7 +16,7 @@ See our [FastTrack for Azure landing page](https://github.com/Azure/FastTrackFor
 
 ### Backup, Archive & Disaster Recovery
   * [Backup and Archive](backup-and-archive-azurechina.md)
-  * [Disaster Recovery with ASR](disaster-recovery-azurechina.md)
+  * [Disaster Recovery with ASR](disaster-recovery/disaster-recovery-azurechina.md)
   
 ### Internal Business Apps
   * [Lift and Shift](lift-and-shift-azurechina.md)
