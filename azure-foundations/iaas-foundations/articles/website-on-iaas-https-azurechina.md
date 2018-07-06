@@ -90,7 +90,7 @@ Following steps will add inbound security rule to allow HTTPS traffic to VM1 & V
    ![Screenshot](media-azurechina/website-on-iaas-https/poc-33.png)
 
 # Testing 
-  * Browse to load balancer public IP (or) **https://(prefix).westus2.cloudapp.azure.com/**
+  * Browse to load balancer public IP (or) **https://(prefix).chinanorth.cloudapp.chinacloudapi.cn/**
   * You will see IIS server default page, with either VM1 or VM2.
   * If you see VM1, then RDP1 into VM1, stop Default Web Site in IIS. Refresh web page, you will see VM2. Load balancer detects VM1 is down and redirects traffic to VM2.
 
