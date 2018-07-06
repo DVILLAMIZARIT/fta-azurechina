@@ -25,7 +25,7 @@
 
 This walkthrough will show you how to bring together all the infrastructure components to build a sample application and making it scalable, highly available and secure.
 
-![Screenshot](media/website-on-iaas-http-azurechina/poc-iaas-scenario-02.png)
+![Screenshot](media-azurechina/website-on-iaas-http/poc-iaas-scenario-02.png)
 
 
 # Learning objectives
@@ -62,7 +62,7 @@ Around 2/3 hours.
 5. Find and Pin, **Load balancers**.
 6. Find and Pin, **Network security groups**.
 
-    ![Screenshot](media/website-on-iaas-http-azurechina/poc-1.png)
+    ![Screenshot](media-azurechina/website-on-iaas-http/poc-1.png)
 
 
 # Resource Group creation
@@ -76,7 +76,7 @@ Around 2/3 hours.
     * **(prefix)-web**
     * **(prefix)-mgmt**
 
-![Screenshot](media/website-on-iaas-http-azurechina/poc-2.png)
+![Screenshot](media-azurechina/website-on-iaas-http/poc-2.png)
 
 
 # Virtual Network creation
@@ -199,7 +199,7 @@ Around 2/3 hours.
         * VM disk type: **HDD disk**
         * Resource Group: **Use existing** (select the Resource Group **(prefix)-web** previously created)
 
-    ![Screenshot](media/website-on-iaas-http-azurechina/poc-5.png)
+    ![Screenshot](media-azurechina/website-on-iaas-http/poc-5.png)
 
     * Size
         * Size: **D1_V2** (or any equivalent)
@@ -213,7 +213,7 @@ Around 2/3 hours.
         * Network Security Group: **None**
         * Diagnostics Storage account: select the storage account previously created (e.g. **ftaiaasdiagstg01**)
 
-        ![Screenshot](media/website-on-iaas-http-azurechina/poc-vm-settings-1.png)
+        ![Screenshot](media-azurechina/website-on-iaas-http/poc-vm-settings-1.png)
 
 
 
@@ -225,7 +225,7 @@ For each of the web VMs do the following steps:
 
 1. Connect via RDP to the jumpbox VM (e.g. fta-iaas-mgmt01). From this VM connect via RDP to both web VMs (using VM names or private IP addresses).
 
-    ![Screenshot](media/website-on-iaas-http-azurechina/poc-9.png)
+    ![Screenshot](media-azurechina/website-on-iaas-http/poc-9.png)
 
 2. Install the Web Server role (IIS). Choose one of the options below (PowerShell or GUI):
 
@@ -233,7 +233,7 @@ For each of the web VMs do the following steps:
 
         * Open **Windows PowerShell** as **Administrator**.
 
-            ![Screenshot](media/website-on-iaas-http-azurechina/poc-windows-powershell-ise.png)
+            ![Screenshot](media-azurechina/website-on-iaas-http/poc-windows-powershell-ise.png)
 
         * Run the following command:
 
@@ -245,7 +245,7 @@ For each of the web VMs do the following steps:
 
         * From the **Server Manager Dashboard**, select **Add Roles and Features**
 
-            ![Screenshot](media/website-on-iaas-http-azurechina/poc-10.png)
+            ![Screenshot](media-azurechina/website-on-iaas-http/poc-10.png)
 
         * Click **Next** on **Before you Begin**
         * Click **Next** on **Installation Type**
@@ -258,7 +258,7 @@ For each of the web VMs do the following steps:
         * On **Role Services**, click **Next**
         * On  **Confirmation**, click **Install**
 
-            ![Screenshot](media/website-on-iaas-http-azurechina/poc-11.png)
+            ![Screenshot](media-azurechina/website-on-iaas-http/poc-11.png)
 
         * On  **Confirmation**, click **Close**
 
@@ -269,7 +269,7 @@ For each of the web VMs do the following steps:
 5. **Right-Click** on **Default Web Site**, and select **Explore**.
 6. From the **Windows Explorer**, **Right-Click** on the file **IISStart.html**, and open in **Notepad**.
 
-![Screenshot](media/website-on-iaas-http-azurechina/poc-12.png)
+![Screenshot](media-azurechina/website-on-iaas-http/poc-12.png)
 
 7. Find the follow line right after the <**body**> tag and add the following.
 
@@ -278,7 +278,7 @@ For each of the web VMs do the following steps:
    For VM2: <h1>This is Web Server 02</h1>
    ``` 
 
-  ![Screenshot](media/website-on-iaas-http-azurechina/poc-13.png)
+  ![Screenshot](media-azurechina/website-on-iaas-http/poc-13.png)
 
 
 # Load Balancer creation
@@ -293,11 +293,11 @@ For each of the web VMs do the following steps:
         * Name: **(prefix)-web-lb-pip**
         * Assignment: **Dynamic**
 
-        ![Screenshot](media/website-on-iaas-http-azurechina/poc-15-dynamic.png)
+        ![Screenshot](media-azurechina/website-on-iaas-http/poc-15-dynamic.png)
 
     * Resource Group: **Use existing** (select the Resource Group **(prefix)-web** previously created)
 
-    ![Screenshot](media/website-on-iaas-http-azurechina/poc-16.png)
+    ![Screenshot](media-azurechina/website-on-iaas-http/poc-16.png)
 
 
 
@@ -307,7 +307,7 @@ For each of the web VMs do the following steps:
 
 1. After the **Load Balancer** is created, open it.
 
-    ![Screenshot](media/website-on-iaas-http-azurechina/poc-17.png)
+    ![Screenshot](media-azurechina/website-on-iaas-http/poc-17.png)
 
 2. Create a backend address pool with the following settings:
     * Name: **(prefix)-backendpool**
@@ -315,7 +315,7 @@ For each of the web VMs do the following steps:
     * Availability set: select web availability set previously created (e.g. **fta-iaas-web-as**)
     * Target network IP configuration: select both web VMs previously created (e.g. **fta-iaas-web01** and **fta-iaas-web02**)
 
-    ![Screenshot](media/website-on-iaas-http-azurechina/poc-19.png)
+    ![Screenshot](media-azurechina/website-on-iaas-http/poc-19.png)
 
 3. Create a health probe with the following settings:
     * Name: **(prefix)-healthprobe**
@@ -324,7 +324,7 @@ For each of the web VMs do the following steps:
     * Interval: **5**
     * Unhealthy threshold: **2**
 
-    ![Screenshot](media/website-on-iaas-http-azurechina/poc-18.png)
+    ![Screenshot](media-azurechina/website-on-iaas-http/poc-18.png)
 
 4. Create a Load Balancer rule with the following settings:
     * Name: **(prefix)-httprule**
@@ -339,7 +339,7 @@ For each of the web VMs do the following steps:
     * Idle timeout (min):**4**
     * Floating IP (direct server return): **Disabled**
 
-    ![Screenshot](media/website-on-iaas-http-azurechina/poc-22.png)
+    ![Screenshot](media-azurechina/website-on-iaas-http/poc-22.png)
  
 
 # Assign DNS name to Load Balancer
@@ -348,7 +348,7 @@ For each of the web VMs do the following steps:
 
 1. Assing a custom domain name to the Load Balancer's IP Address (e.g. fta-iaas-contoso).
 
-![Screenshot](media/website-on-iaas-http-azurechina/poc-27.png)
+![Screenshot](media-azurechina/website-on-iaas-http/poc-27.png)
 
 
 # Testing 
@@ -357,7 +357,7 @@ For each of the web VMs do the following steps:
 2. You will see the IIS server default page showing either Web Server 01 or 02.
 3. If you see Web Server 01, then RDP into VM1, stop the Default Web Site in IIS. Refresh the web page, you will see Web Server 02. The Load balancer detects VM1 is down and redirects traffic to VM2.
 
-![Screenshot](media/website-on-iaas-http-azurechina/poc-28.png)
+![Screenshot](media-azurechina/website-on-iaas-http/poc-28.png)
 
 
 # Automation Scripts (ARM Template)
@@ -366,16 +366,16 @@ For each of the web VMs do the following steps:
 2. Select **(prefix)-poc-rg**.
 3. Under Settings, click **Download** | **Save As** | (select location).
 
-![Screenshot](media/website-on-iaas-http-azurechina/poc-29.png)
+![Screenshot](media-azurechina/website-on-iaas-http/poc-29.png)
 
 4. After download, **Extract All** to (select location).
 
-![Screenshot](media/website-on-iaas-http-azurechina/poc-30.png)
+![Screenshot](media-azurechina/website-on-iaas-http/poc-30.png)
 
 
 # Visualize your Architecture with ArmViz
  
 1. Open browser and goto **http://armviz.io** to view the template.
 
-![Screenshot](media/website-on-iaas-http-azurechina/armvizdiagram.png)
+![Screenshot](media-azurechina/website-on-iaas-http/armvizdiagram.png)
 
