@@ -353,7 +353,7 @@ For each of the web VMs do the following steps:
 
 # Testing 
 
-1. Browse to the load balancer public IP or **http://(prefix).(region).cloudapp.azure.com/**.
+1. Browse to the load balancer public IP or **http://(prefix).(region).cloudapp.chinacloudapi.cn/**.
 2. You will see the IIS server default page showing either Web Server 01 or 02.
 3. If you see Web Server 01, then RDP into VM1, stop the Default Web Site in IIS. Refresh the web page, you will see Web Server 02. The Load balancer detects VM1 is down and redirects traffic to VM2.
 
