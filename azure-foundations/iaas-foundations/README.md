@@ -22,7 +22,7 @@ See [Azure in China](https://github.com/Azure/fta-azurechina/) for more scenario
     
 ## Walkthroughs
 
- * [Walkthrough: Deploying Website on Azure IaaS VMs](articles/website-on-iaas-http.md)
- * [Walkthrough: Deploying Website on Azure IaaS VMs - adding HTTPS support](articles/website-on-iaas-https.md)
- * [Walkthrough: Deploying Website on Azure IaaS VMs - using Red Hat Linux](articles/website-on-iaas-http-rhel.md)
+ * Walkthrough: Deploying Website on Azure IaaS VMs ([Global](articles/website-on-iaas-http.md), [China](articles/website-on-iaas-http-azurechina.md))
+  * Walkthrough: Deploying Website on Azure IaaS VMs - adding HTTPS support ([Global](articles/website-on-iaas-https.md), [China](articles/website-on-iaas-https-azurechina.md))
+ * Walkthrough: Deploying Website on Azure IaaS VMs - using Red Hat Linux ([Global](articles/website-on-iaas-http-rhel.md), [China](articles/website-on-iaas-http-rhel-azurechina.md))
 
