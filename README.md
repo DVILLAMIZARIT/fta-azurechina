@@ -19,13 +19,13 @@ We are a team of dedicated engineers providing customers structured guidance to 
   * [Disaster Recovery with ASR](disaster-recovery/disaster-recovery-azurechina.md)
 
 ### Managed Disks
-	- [Managed Disk](managed-disk/managed-disk-azurechina.md)
+	* [Managed Disk](managed-disk/managed-disk-azurechina.md)
 
 ### Internal Business Apps
   - App Modernization
   * [Lift and Shift](lift-and-shift-azurechina.md)
 
-* [Customer Facing Apps]
+### [Customer Facing Apps]
 	- Digital Marketing
 	- E-commerce
 
