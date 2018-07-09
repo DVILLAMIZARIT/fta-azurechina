@@ -37,7 +37,7 @@ Alternatively, if you wish to create a managed image from a .VHD file which exis
 
 2. Login to Azure and select the subscripton to create the policy. Substitute the placeholder in the code with the target subscription ID in which the managed image will be created.
 ```powershell
-Login-AzureRmAccount
+Login-AzureRmAccount -Environment AzureChinaCloud
 
 Select-AzureRmSubscription -SubscrpitionId xxxxxx-xxxxxx-xxxxxx-xxxxxx
 ```

@@ -21,7 +21,7 @@ To complete this walkthrough, you will need:
 2. Login to Azure and select the subscripton to create the policy.
     > Note: Substitute the placeholder in the code with your subscription ID.
 ```powershell
-Login-AzureRmAccount
+Login-AzureRmAccount -Environment AzureChinaCloud
 
 Select-AzureRmSubscription -SubscrpitionId xxxxxx-xxxxxx-xxxxxx-xxxxxx
 ```

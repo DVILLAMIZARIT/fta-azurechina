@@ -56,7 +56,7 @@ if (($modlist -eq $null) -or ($modlist.Version.Major -lt 6)){
 try{
     # login to Azure
     # to skip logging into Azure for authenticated sessions, comment out the next 5 lines
-    $account = Login-AzureRmAccount
+    $account = Login-AzureRmAccount -Environment AzureChinaCloud
     if(!$account) {
         Throw "Could not login to Azure"
     }

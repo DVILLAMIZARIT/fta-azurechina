@@ -37,7 +37,7 @@ param(
 
 try{
     #Login to Azure
-    $Account = Login-AzureRmAccount
+    $Account = Login-AzureRmAccount -Environment AzureChinaCloud
         if(!$Account) {
             Throw "Could not login to Azure"
         }
