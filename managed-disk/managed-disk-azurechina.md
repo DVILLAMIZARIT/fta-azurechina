@@ -2,7 +2,9 @@
 
 See our [FastTrack for Azure landing page](https://github.com/Azure/FastTrackForAzure) for more information.
 
-# Managed Disks Scenarios
+# Managed Disks Scenarios in [Global](https://github.com/Azure/fta-manageddisks) Azure.
+
+# Managed Disks Scenarios in [China](./managed-disk-azurechina.md) Azure. 
 
 * Governance
     - [Azure Policies](./azure-policies/azure-policies-for-managed-disks.md)
