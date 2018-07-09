@@ -17,7 +17,7 @@ See our [FastTrack for Azure landing page](https://github.com/Azure/FastTrackFor
     * [Failover](articles/disaster-recovery-azurechina-reference-resources.md#failover)
     * [Other](articles/disaster-recovery-azurechina-reference-resources.md#other)
     
-## Walkthroughs
+## Walkthroughs - under construction
 
  * [Walkthrough: Deploying ASR for Hyper-V site](articles/website-on-iaas-http.md)
  * [Walkthrough: Deploying ASR for SCVMM managed private cloud site](articles/website-on-iaas-https.md)
