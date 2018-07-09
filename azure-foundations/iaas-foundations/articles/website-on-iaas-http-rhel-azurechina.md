@@ -67,7 +67,7 @@ After completing the exercises in this module, you will be able to:
    ![Screenshot](media-azurechina/website-on-iaas-http/poc-2.png)
 
 # Virtual Network Creation
-  * Create a VNET named **(prefix)-usw2-vnet**
+  * Create a VNET named **(prefix)-nc2-vnet**
   * Create a Subnet named **(prefix)-web-snet**
 
    ![Screenshot](media-azurechina/website-on-iaas-http/poc-3.png)

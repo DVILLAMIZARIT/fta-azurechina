@@ -84,7 +84,7 @@ Around 2/3 hours.
 > Guidelines to create a Virtual Network [here](https://docs.microsoft.com/en-us/azure/virtual-network/quick-create-portal)
 
 1. Create a Virtual Network with the following settings:
-    * Name: **(prefix)-(region)-vnet** (e.g. fta-iaas-neu-vnet)
+    * Name: **(prefix)-(region)-vnet** (e.g. fta-iaas-nc-vnet)
     * Address Space: **10.0.0.0/16**
     * Resource Group: **(prefix)-network** (select the one previously created)
     * Subnet name: **(prefix)-mgmt-subnet**
@@ -182,7 +182,7 @@ Around 2/3 hours.
     * Settings
         * Availability Set: create new > **(prefix)-mgmt-as**
         * Storage / use managed disks: **Yes**
-        * Virtual Network: select the one previously create Virtual Network (e.g. **fta-iaas-neu-vnet**)
+        * Virtual Network: select the one previously create Virtual Network (e.g. **fta-iaas-nc-vnet**)
         * Subnet: select the web subnet previsouly created (e.g. **fta-iaas-web-subnet**)
         * Public IP address: create new > **(prefix)-mgmt01-ip**
         * Network Security Group: **None**
@@ -207,7 +207,7 @@ Around 2/3 hours.
     * Settings
         * Availability Set: **(prefix)-web-as** (create it during the creation of the first VM)
         * Storage / use managed disks: **Yes**
-        * Virtual Network: select the one previously create Virtual Network (e.g. **fta-iaas-neu-vnet**)
+        * Virtual Network: select the one previously create Virtual Network (e.g. **fta-iaas-nc-vnet**)
         * Subnet: select the web subnet previsouly created (e.g. **fta-iaas-web-subnet**)
         * Public IP address: **None**
         * Network Security Group: **None**
