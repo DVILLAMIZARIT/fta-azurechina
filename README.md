@@ -3,9 +3,9 @@
 > Contact Allen (allenk) or Joe (joechou) for any questions or feedback.
 
 # FastTrack for Azure
+We are a team of dedicated engineers providing customers structured guidance to get started with Azure. We help setup and configure Azure infrastructure as well as provide architecture concepts, best practices and design principles for deploying applications on Azure.
 
-See our [FastTrack for Azure landing page](https://github.com/Azure/FastTrackForAzure) for more information.
-
+**Find out more about [FastTrack for Azure here](https://azure.com/fasttrack)**. 
 
 # Azure in China Scenarios
 
@@ -15,13 +15,19 @@ See our [FastTrack for Azure landing page](https://github.com/Azure/FastTrackFor
   * [Governance](azure-foundations/governance)
 
 ### Backup, Archive & Disaster Recovery
-  * [Backup and Archive](backup-and-archive-azurechina.md)
+  * [Backup and Archive](backup-archive/backup-archive-azurechina.md)
   * [Disaster Recovery with ASR](disaster-recovery/disaster-recovery-azurechina.md)
-  
+
+### Managed Disks
+	- [Managed Disk](managed-disk/managed-disk-azurechina.md)
+
 ### Internal Business Apps
+  - App Modernization
   * [Lift and Shift](lift-and-shift-azurechina.md)
 
-
+* [Customer Facing Apps]
+	- Digital Marketing
+	- E-commerce
 
 # Contributing
 
