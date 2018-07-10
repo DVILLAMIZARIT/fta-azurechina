@@ -15,7 +15,7 @@ See our [FastTrack for Azure landing page](https://github.com/Azure/FastTrackFor
     * [Azure Backup for IaaS / File Shares](articles/backup-archive-azurechina-reference-resources.md#azure-backup-for-iaas)
     * [Archiving Data on Azure](articles/backup-archive-azurechina-reference-resources.md#archive-data)
 
-## Walkthroughs - under construction
+## Walkthroughs
 
  * [Walkthrough: Create Recovery Service Vault](https://docs.microsoft.com/en-us/azure/backup/backup-configure-vault#create-a-recovery-services-vault)
  * [Walkthrough: install and register azure recovery service agent](https://docs.microsoft.com/en-us/azure/backup/backup-configure-vault#install-and-register-the-agent)
