@@ -43,5 +43,4 @@
 
 ## Archiving Data on Azure
 * storage access tier ([Global](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers), [China](https://docs.azure.cn/storage/blobs/storage-blob-storage-tiers))
-* cool storage([Global](https://azure.microsoft.com/en-us/blog/introducing-azure-cool-storage/))
-)
+* cool storage ([Global](https://azure.microsoft.com/en-us/blog/introducing-azure-cool-storage/))
