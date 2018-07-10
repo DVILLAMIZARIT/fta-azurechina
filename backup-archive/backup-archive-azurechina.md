@@ -20,6 +20,6 @@ See our [FastTrack for Azure landing page](https://github.com/Azure/FastTrackFor
  * Walkthrough: Create Recovery Service Vault ([Global](https://docs.microsoft.com/en-us/azure/backup/backup-configure-vault#create-a-recovery-services-vault), [China](https://docs.azure.cn/backup/backup-configure-vault#create-a-recovery-services-vault))
  * Walkthrough: install and register azure recovery service agent ([Global](https://docs.microsoft.com/en-us/azure/backup/backup-configure-vault#install-and-register-the-agent), [China](https://docs.azure.cn/backup/backup-configure-vault#install-and-register-the-agent))
  * Walkthrough: Backup files and Folders ([Global](https://docs.microsoft.com/en-us/azure/backup/backup-configure-vault#back-up-your-files-and-folders), [China](https://docs.azure.cn/backup/backup-configure-vault#back-up-your-files-and-folders))
- * Walkthrough: Deploying Azure Backup Server ([Global](https://docs.microsoft.com/en-us/azure/backup/backup-azure-microsoft-azure-backup), [China](https://docs.azure.cn/backup/backup-azure-microsoft-azure-backup)
- * Walkthrough: Backup & Restore Azure VM([Global](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-restore-vms), [China](https://docs.azure.cn/azure/backup/backup-azure-arm-restore-vms))
+ * Walkthrough: Deploying Azure Backup Server ([Global](https://docs.microsoft.com/en-us/azure/backup/backup-azure-microsoft-azure-backup), [China](https://docs.azure.cn/backup/backup-azure-microsoft-azure-backup))
+ * Walkthrough: Backup & Restore Azure VM([Global](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-restore-vms), [China](https://docs.azure.cn/backup/backup-azure-arm-restore-vms))
 
