@@ -57,18 +57,18 @@
   * Target Resource
     * Storage
       * Hyper-V ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/hyper-v-exclude-disk), [China](https://docs.azure.cn/site-recovery/hyper-v-exclude-disk)
-      VMWare ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-exclude-disk), [China](https://docs.azure.cn/site-recovery/vmware-azure-exclude-disk)
+      VMWare ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-exclude-disk), [China](https://docs.azure.cn/site-recovery/vmware-azure-exclude-disk))
     * Compute
     * Network
       * Network Mapping ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/hyper-v-vmm-network-mapping), [China](https://docs.azure.cn/site-recovery/hyper-v-vmm-network-mapping))
-      * VM Interface ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-manage-network-interfaces-on-premises-to-azure), [China](https://docs.azure.cn/site-recovery/site-recovery-manage-network-interfaces-on-premises-to-azure)
+      * VM Interface ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-manage-network-interfaces-on-premises-to-azure), [China](https://docs.azure.cn/site-recovery/site-recovery-manage-network-interfaces-on-premises-to-azure))
       * Hybrid after failover ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/concepts-on-premises-to-azure-networking), [China](https://docs.microsoft.com/en-us/azure/site-recovery/concepts-on-premises-to-azure-networking))
 
 
 ## Failover
-  * [Recovery Plan](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-create-recovery-plans)
-  * [Test Failover](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-test-failover-to-azure)
-  * [Planed Failover](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-failover)
+  * Recovery Plan ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-create-recovery-plans), [China](https://docs.azure.cn/site-recovery/site-recovery-create-recovery-plans))
+  * Test Failover ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-test-failover-to-azure), [China](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-test-failover-to-azure))
+  * Planed Failover ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-failover), [China](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-failover))
   * Unplanned Failover
   * Failback
     * Hyper-V ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-failover), [China](https://docs.azure.cn/site-recovery/site-recovery-failover))

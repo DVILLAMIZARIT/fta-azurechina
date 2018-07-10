@@ -36,7 +36,7 @@
 * restore
     * restore VM ([Global](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-restore-vms), [China](https://docs.azure.cn/backup/backup-azure-arm-restore-vms))
     * restore encypted VM ([Global](https://docs.microsoft.com/en-us/azure/backup/backup-azure-vms-encryption), [China](https://docs.microsoft.com/en-us/azure/backup/backup-azure-vms-encryption))
-    * restore file inside VM ([Gloabl](https://docs.microsoft.com/en-us/azure/backup/backup-azure-restore-files-from-vm), [China](https://docs.azure.cn/backup/backup-azure-restore-files-from-vm)))
+    * restore file inside VM ([Gloabl](https://docs.microsoft.com/en-us/azure/backup/backup-azure-restore-files-from-vm), [China](https://docs.azure.cn/backup/backup-azure-restore-files-from-vm))
 
 
 ## Backup azure file share([Global](https://docs.microsoft.com/en-us/azure/backup/backup-azure-files), [China](https://docs.azure.cn/backup/backup-azure-files))
