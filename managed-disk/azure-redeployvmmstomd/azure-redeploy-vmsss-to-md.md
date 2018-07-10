@@ -27,7 +27,7 @@ Considerations:
 ## Prerequisites for deploying a managed disks VMSS from custom images
 You must create a managed image for the VMSS to reference. The managed disk image must exist in the same subscription and same region as the VMSS.
 
-The managed image must be created from a .VHD file which exist in the same region and subscription. You can follow the steps outlined in our documentation to [Create a Managed Image from a .VHD file](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/capture-image-resource#create-image-from-a-vhd-in-a-storage-account).
+The managed image must be created from a .VHD file which exist in the same region and subscription. You can follow the steps outlined in our documentation to [Create a Managed Image from a .VHD file](https://docs.azure.cn/virtual-machines/windows/capture-image-resource#create-image-from-a-vhd-in-a-storage-account).
 
 Alternatively, if you wish to create a managed image from a .VHD file which exist in a storage account in the same region but from a different subscription then you can use the workaround below. This workaround creates a managed disk resouce from the source .VHD file and then a managed image from this managed disks resource. The managed disk resource can be deleted once the managed image has been created successfully.
 
@@ -67,13 +67,13 @@ $image = New-AzureRmImage -ImageName $imageName -ResourceGroupName $resour
 ## Modify/Create an ARM Template to deploy the Managed Disks VMSS from a custom managed image.
 
 This ARM template was created by leveraging the following Azure documentation walkthroughs:
-* [Convert a VMSS ARM Template to VMSS ARM template using Managed Disks](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md)
+* [Convert a VMSS ARM Template to VMSS ARM template using Managed Disks](https://docs.azure.cn/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md)
 * [201-vmss-windows-customimage](https://github.com/Azure/azure-quickstart-templates/tree/master/201-vmss-windows-customimage)
 
 ## Modify/Create an ARM Template to deploy the Managed Disks VMSS with post provisioning DSC.
 
 This ARM template was created by leveraging the following Azure documentation walkthroughs:
-* [Convert a VMSS ARM Template to VMSS ARM template using Managed Disks](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md)
+* [Convert a VMSS ARM Template to VMSS ARM template using Managed Disks](https://docs.azure.cn/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md)
 * [201-vmss-custom-script-windows](https://github.com/Azure/azure-quickstart-templates/tree/master/201-vmss-custom-script-windows), optional, for VMSS with post provisioning using custom scripts.
 * [201-vmss-windows-webapp-dsc-autoscale](https://github.com/Azure/azure-quickstart-templates/tree/master/201-vmss-windows-webapp-dsc-autoscale)
 
@@ -162,7 +162,7 @@ Modify your ARM templates as follows:
 ## Update the internal Load Balancer Configuration
 **Option 1:** Update DNS and other internal systems to point to new ILB DNS or IP (if static IP is used).
 
-**Option 2:** Static IP ILB-  Set old VMSS ILB IP to unused IP from subnet. Then update new VMSS ILB IP to old IP address. You can configure the internal IP address as static for a VM through PowerShell [here](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-static-private-ip-arm-ps).
+**Option 2:** Static IP ILB-  Set old VMSS ILB IP to unused IP from subnet. Then update new VMSS ILB IP to old IP address. You can configure the internal IP address as static for a VM through PowerShell [here](https://docs.azure.cn/virtual-network/virtual-networks-static-private-ip-arm-ps).
 
 
 ## Update the external Load Balancer Configuration

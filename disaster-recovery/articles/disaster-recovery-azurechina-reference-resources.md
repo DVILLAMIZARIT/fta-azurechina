@@ -25,42 +25,44 @@
   * [Analysize Report](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-vmware-deployment-planner-analyze-report)
   * [Scale Out Process Server](https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-set-up-process-server-scale)
 
-* [RBAC for ASR](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-role-based-linked-access-control)
+* RBAC for ASR ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-role-based-linked-access-control), [China](https://docs.azure.cn/site-recovery/site-recovery-role-based-linked-access-control))
 
 ## Recovery Vault
-* [Overview](https://docs.microsoft.com/en-us/azure/backup/backup-azure-recovery-services-vault-overview)
-* [Backup Vault to Recovery Service Vault](https://docs.microsoft.com/en-us/azure/backup/backup-azure-upgrade-backup-to-recovery-services)
+* Overview] ([Global](https://docs.microsoft.com/en-us/azure/backup/backup-azure-recovery-services-vault-overview), [China](https://docs.azure.cn/backup/backup-azure-recovery-services-vault-overview))
+* Backup Vault to Recovery Service Vault ([Global](https://docs.microsoft.com/en-us/azure/backup/backup-azure-upgrade-backup-to-recovery-services), [China](https://docs.azure.cn/backup/backup-azure-upgrade-backup-to-recovery-services)
 
 
 
 ## Replication Architecture
 
-  * [Hyper-V to Azure](https://docs.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-architecture)
+  * Hyper-V to Azure ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-architecture), [China](https://docs.azure.cn/site-recovery/hyper-v-azure-architecture))
   * VMWare to Azure
-    * [On Premise](https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-architecture)
-    * [Cloud Service Provider](https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-multi-tenant-overview)
-  * [Azure to Azure](https://docs.microsoft.com/en-us/azure/site-recovery/azure-to-azure-architecture)
-  * [Physical, AWS & other Hosted Cloud to Azure](https://docs.microsoft.com/en-us/azure/site-recovery/physical-azure-architecture)
+    * On Premise ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-architecture), [China](https://docs.azure.cn/site-recovery/vmware-azure-architecture))
+    * Cloud Service Provider ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-multi-tenant-overview), [China](https://docs.azure.cn/zh-cn/site-recovery/vmware-azure-multi-tenant-overview))
+  * Azure to Azure ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/azure-to-azure-architecture), [China](https://docs.azure.cn/site-recovery/azure-to-azure-architecture))
+  * Physical, AWS & other Hosted Cloud to Azure([Global](https://docs.microsoft.com/en-us/azure/site-recovery/physical-azure-architecture), [China](https://docs.azure.cn/site-recovery/physical-azure-architecture))
 
 ## Prepare Infrastructure for VMWare and Physcial Server
-  * [Setup Source VMWare environment](https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-set-up-source)
-  * [Setup Source Physical environmnet](https://docs.microsoft.com/en-us/azure/site-recovery/physical-azure-set-up-source)
-* [Mobility Service](https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-install-mobility-service)
+  * Setup Source VMWare environment ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-set-up-source), [China](https://docs.azure.cn/site-recovery/vmware-azure-set-up-source))
+  * Setup Source Physical environmnet ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/physical-azure-set-up-source),[China](https://docs.azure.cn/site-recovery/physical-azure-set-up-source))
+* Mobility Service ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-install-mobility-service), [China](https://docs.azure.cn/site-recovery/vmware-azure-install-mobility-service))
 
 ## Manage Replication Data
   * Enable Replication
-    * [Hyper-V](https://docs.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-powershell-resource-manager) | [with SCVMM](https://docs.microsoft.com/en-us/azure/site-recovery/hyper-v-vmm-powershell-resource-manager)
-    * [VMWare](https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-exclude-disk)
-    * [Azure to Azure](https://docs.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication)
+    * Hyper-V ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-powershell-resource-manager), [China](https://docs.azure.cn/site-recovery/hyper-v-azure-powershell-resource-manager))
+    * Hyper-V with SCVMM ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/hyper-v-vmm-powershell-resource-manager), [China](https://docs.azure.cn/site-recovery/hyper-v-vmm-powershell-resource-manager))
+    * VMWare ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-enable-replication), [China](https://docs.azure.cn/site-recovery/vmware-azure-enable-replication)
+    * Azure to Azure ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication), [China](https://docs.azure.cn/site-recovery/azure-to-azure-how-to-enable-replication))
+
   * Target Resource
     * Storage
-      * [Hyper-V](https://docs.microsoft.com/en-us/azure/site-recovery/hyper-v-exclude-disk)
-      [VMWare](https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-exclude-disk)
+      * Hyper-V ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/hyper-v-exclude-disk), [China](https://docs.azure.cn/site-recovery/hyper-v-exclude-disk)
+      VMWare ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-exclude-disk), [China](https://docs.azure.cn/site-recovery/vmware-azure-exclude-disk)
     * Compute
     * Network
-      * [Network Mapping](https://docs.microsoft.com/en-us/azure/site-recovery/hyper-v-vmm-network-mapping)
-      * [VM Interface](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-manage-network-interfaces-on-premises-to-azure)
-      * [Hybrid after failover](https://docs.microsoft.com/en-us/azure/site-recovery/concepts-on-premises-to-azure-networking)
+      * Network Mapping ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/hyper-v-vmm-network-mapping), [China](https://docs.azure.cn/site-recovery/hyper-v-vmm-network-mapping))
+      * VM Interface ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-manage-network-interfaces-on-premises-to-azure), [China](https://docs.azure.cn/site-recovery/site-recovery-manage-network-interfaces-on-premises-to-azure)
+      * Hybrid after failover ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/concepts-on-premises-to-azure-networking), [China](https://docs.microsoft.com/en-us/azure/site-recovery/concepts-on-premises-to-azure-networking))
 
 
 ## Failover
@@ -69,10 +71,10 @@
   * [Planed Failover](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-failover)
   * Unplanned Failover
   * Failback
-    * [Hyper-V](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-failover)
-    * [VMWare](https://docs.microsoft.com/en-us/azure/site-recovery/concepts-types-of-failback)
-      * [Reprotect](https://docs.microsoft.com/en-us/azure/site-recovery/concepts-types-of-failback)
-      * [Failback](https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-failback)
+    * Hyper-V ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-failover), [China](https://docs.azure.cn/site-recovery/site-recovery-failover))
+    * VMWare ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/concepts-types-of-failback), [China](https://docs.azure.cn/site-recovery/concepts-types-of-failback))
+      * Reprotect ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/concepts-types-of-failback), [China](https://docs.azure.cn/site-recovery/concepts-types-of-failback))
+      * Failback ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-failback), [China](https://docs.azure.cn/site-recovery/vmware-azure-failback))
 
 ## Other
-* [Use Traffic Manager to reduce RTO](https://docs.microsoft.com/en-us/azure/site-recovery/concepts-traffic-manager-with-site-recovery)
+* Use Traffic Manager to reduce RTO ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/concepts-traffic-manager-with-site-recovery), [China](https://docs.azure.cn/site-recovery/concepts-traffic-manager-with-site-recovery))
