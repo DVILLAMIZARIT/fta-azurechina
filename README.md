@@ -22,7 +22,7 @@ We are a team of dedicated engineers providing customers structured guidance to 
 * [Managed Disk](managed-disk/managed-disk-azurechina.md)
 
 ### Internal Business Apps
-* App Modernization
+* [App Modernization](app-modernization/app-modernization-azurechina.md)
 * [Lift and Shift](lift-and-shift-azurechina.md)
 
 ### Customer Facing Apps

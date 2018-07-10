@@ -38,7 +38,7 @@
     * [restore VM](https://docs.microsoft.com/en-in/azure/backup/backup-azure-arm-restore-vms)
     * [restore encypted VM](https://docs.microsoft.com/en-in/azure/backup/backup-azure-vms-encryption)
     * [restore file inside VM](https://docs.microsoft.com/en-in/azure/backup/backup-azure-restore-files-from-vm)
- 
+
 
 ## [Backup azure file share](https://docs.microsoft.com/en-in/azure/backup/backup-azure-files)
 
