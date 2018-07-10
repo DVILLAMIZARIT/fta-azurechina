@@ -19,8 +19,8 @@ See our [FastTrack for Azure landing page](https://github.com/Azure/FastTrackFor
     
 ## Walkthroughs - under construction
 
- * [Walkthrough: Deploying ASR for Hyper-V site](articles/website-on-iaas-http.md)
- * [Walkthrough: Deploying ASR for SCVMM managed private cloud site](articles/website-on-iaas-https.md)
- * [Walkthrough: Deploying ASR for VMWare environment](articles/website-on-iaas-http-rhel.md)
- * [Walkthrough: Deploying ASR for physical servers](articles/website-on-iaas-http-rhel.md)
+ * Walkthrough: Deploying ASR for Hyper-V site ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-tutorial), [China](https://docs.azure.cn/site-recovery/hyper-v-azure-tutorial))
+ * Walkthrough: Deploying ASR for SCVMM managed private cloud site ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/hyper-v-vmm-azure-tutorial), [China](https://docs.azure.cn/site-recovery/hyper-v-vmm-azure-tutorial))
+ * Walkthrough: Deploying ASR for VMWare environment ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-tutorial), [China](https://docs.azure.cn/site-recovery/vmware-azure-tutorial))
+
 
