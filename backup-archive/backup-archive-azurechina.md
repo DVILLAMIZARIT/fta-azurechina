@@ -19,7 +19,7 @@ See our [FastTrack for Azure landing page](https://github.com/Azure/FastTrackFor
 
  * [Walkthrough: Create Recovery Service Vault](https://docs.microsoft.com/en-us/azure/backup/backup-configure-vault#create-a-recovery-services-vault)
  * [Walkthrough: install and register azure recovery service agent](https://docs.microsoft.com/en-us/azure/backup/backup-configure-vault#install-and-register-the-agent)
- * [Walkthrough: Deploying Azure Backup Server](articles/website-on-iaas-http.md)
- * [Walkthrough: Backup & Restore Files In Guest OS](articles/website-on-iaas-https.md)
- * [Walkthrough: Backup & Restore Azure VM](articles/website-on-iaas-http-rhel.md)
+ * [Walkthrough: Backup files and Folders](https://docs.microsoft.com/en-us/azure/backup/backup-configure-vault#back-up-your-files-and-folders)
+ * [Walkthrough: Deploying Azure Backup Server](https://docs.microsoft.com/en-us/azure/backup/backup-azure-microsoft-azure-backup)
+ * [Walkthrough: Backup & Restore Azure VM](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-restore-vms)
 

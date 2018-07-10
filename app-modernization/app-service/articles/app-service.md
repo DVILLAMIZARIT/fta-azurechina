@@ -37,7 +37,8 @@ After completing the exercises in this module, you will be able to:
 * Create a SendGrid Email account
 * Create a function to pick up the message from the Queue and send email using SendGrid
 
-[comment]:<jacky by default, visual studio can only connnect to global azure, in order to publish to china cloud, need follow https://docs.azure.cn/zh-cn/articles/guidance/developerdifferences#使用-visual-studio-2017连接中国区-azure to make configuration>
+#### * By default, visual studio can only connnect to global Azure. In order to publish to China, please follow this [GUIDE](https://docs.azure.cn/zh-cn/articles/guidance/developerdifferences) to custom IDE for Azure China.
+
 ## Open application with Visual Studio
 * Unblock the file in Windows Explorer properties (Right Click on the zip file in explorer and select 'Properties', then click 'unblock')
 * Extract the zip file to a working folder.
