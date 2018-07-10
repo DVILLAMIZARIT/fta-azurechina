@@ -8,13 +8,13 @@
 * [RTO & RPO on Azure](https://blogs.msdn.microsoft.com/cloud_solution_architect/2018/05/02/understanding-rpo-and-rto-considerations-of-azure-solutions/)
 * [Azure Site Recovery](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-overview)
 * Support Matrix
-  * [Hyper-V to Azure](https://docs.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-support-matrix)
-  * [VMWare/Phsycal/Hosted Cloud to Azure](https://docs.microsoft.com/en-us/azure/site-recovery/vmware-physical-azure-support-matrix)
-  * [Azure to Azure](https://docs.microsoft.com/en-us/azure/site-recovery/azure-to-azure-support-matrix)
-* [ASR for Application](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-workload)
-* [FAQ](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-faq)
+  * Hyper-V to Azure ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-support-matrix), [China](https://docs.azure.cn/site-recovery/hyper-v-azure-support-matrix))
+  * VMWare/Phsycal/Hosted Cloud to Azure ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/vmware-physical-azure-support-matrix), [China](https://docs.azure.cn/site-recovery/vmware-physical-azure-support-matrix))
+  * Azure to Azure ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/azure-to-azure-support-matrix), [China](https://docs.azure.cn/site-recovery/azure-to-azure-support-matrix))
+  * ASR for Application ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-workload), [China](https://docs.azure.cn/site-recovery/site-recovery-workload))
+  * FAQ ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-faq), [China](https://docs.azure.cn/site-recovery/site-recovery-faq))
 
-## Capacity Plan
+## Capacity Plan 
 * Hyper-V Envionment to Azure
   * [Deployment Planner](https://docs.microsoft.com/en-us/azure/site-recovery/hyper-v-deployment-planner-overview)
   * [Generate Report](https://docs.microsoft.com/en-us/azure/site-recovery/hyper-v-deployment-planner-run)

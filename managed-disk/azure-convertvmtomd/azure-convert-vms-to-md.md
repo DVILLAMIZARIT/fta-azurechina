@@ -41,9 +41,9 @@ Convertto-ManagedDisks -SubscriptionID = "eaca98da-dead-4803-af35-f0edb23e0xxx" 
 
 ## Script
 The following is the script source code. Script workflow was created by leveraging the following Azure documentation walkthroughs:
-* [Convert Unamanged to Managed Disks](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks)
-* [Copy Managed Disks to same or different subscription](https://docs.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-windows-powershell-sample-copy-managed-disks-to-same-or-different-subscription)
-* [Attach a Managed Disks to a VM](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-disk-ps)
+* [Convert Unamanged to Managed Disks](https://docs.azure.cn/virtual-machines/windows/convert-unmanaged-to-managed-disks)
+* [Copy Managed Disks to same or different subscription](https://docs.azure.cn/virtual-machines/scripts/virtual-machines-windows-powershell-sample-copy-managed-disks-to-same-or-different-subscription)
+* [Attach a Managed Disks to a VM](https://docs.azure.cn/virtual-machines/windows/attach-disk-ps)
 
 ```powershell
 <#

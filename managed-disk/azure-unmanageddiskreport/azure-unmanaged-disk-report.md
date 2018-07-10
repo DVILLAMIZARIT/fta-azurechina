@@ -101,4 +101,4 @@ Centos-ARMTemplate2|CUSTOMIMAGES-RG1|eastus2||https://storcustomimages.blob.core
 
 # Next Steps
 
-The report can then be used in conjunction with the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/) to perform any cost analysis.
+The report can then be used in conjunction with the [Azure Pricing Calculator](https://www.azure.cn/en-us/pricing/calculator) to perform any cost analysis.
