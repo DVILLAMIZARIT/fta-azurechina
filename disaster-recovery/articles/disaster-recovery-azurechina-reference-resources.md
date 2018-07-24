@@ -67,8 +67,8 @@
 
 ## Failover
   * Recovery Plan ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-create-recovery-plans), [China](https://docs.azure.cn/site-recovery/site-recovery-create-recovery-plans))
-  * Test Failover ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-test-failover-to-azure), [China](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-test-failover-to-azure))
-  * Planed Failover ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-failover), [China](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-failover))
+  * Test Failover ([Global.cn](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-test-failover-to-azure), [China](https://docs.azure/site-recovery/site-recovery-test-failover-to-azure))
+  * Planed Failover ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-failover), [China](https://docs.azure.cn/site-recovery/site-recovery-failover))
   * Unplanned Failover
   * Failback
     * Hyper-V ([Global](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-failover), [China](https://docs.azure.cn/site-recovery/site-recovery-failover))

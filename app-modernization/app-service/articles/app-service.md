@@ -61,14 +61,14 @@ After completing the exercises in this module, you will be able to:
 * Navigate to the Azure portal.
 * Click on **+ New**, type in **Resource Group** in the search area, press **Enter**.
 * Click on **Resource Group**, click on **Create**.
-* Enter a descriptive name (e.g. **ContosoExpenses-RG-WestUS2**) as the **Resource group name**.
+* Enter a descriptive name (e.g. **mc-rg-fta-app**) as the **Resource group name**.
 * Select your **Subscription**.
-* Select your **Resource Group Location** (e.g. West US 2).
+* Select your **Resource Group Location** (e.g. China East 2).
 * Click **Create**.
 
   ![Screenshot](media/app-service/appmod-pic-0104.png)
 
-* Navigate to the resource group **ContosoExpenses-RG-WestUS2**.
+* Navigate to the resource group **mc-rg-fta-app**.
 
   ![Screenshot](media/app-service/appmod-pic-0106.png)
 
@@ -78,14 +78,14 @@ After completing the exercises in this module, you will be able to:
 
 * Click **Create**.
 * Enter **contosoexpensesdb** as the **Database Name**.
-* For **Resource Group**, select **Use Existing**, then select the **Resource Group** created earlier (e.g. ContosoExpenses-RG-WestUS2).
+* For **Resource Group**, select **Use Existing**, then select the **Resource Group** created earlier (e.g. mc-rg-fta-app).
 * For **Server**, click **Configure required settings**.
 * Click **Create a new Server**.
-* For **Server Name**, enter **contosoexpensesdbserver1**.
+* For **Server Name**, enter **mc-sqlsvr-fta-contosoexpenses**.
   * Note: The server name needs to be globally unique, so add a number to the end of name.
 * Enter a **Server admin login** and **Password**.
   * Note: Save the **Login name** and **Password**, as you’ll need it later.
-* For Location select the same location as before (e.g. **West US 2**).
+* For Location select the same location as before (e.g. **China East 2**).
 * Click **Select** to save the server settings.
 
   ![Screenshot](media/app-service/appmod-pic-0110.png)
