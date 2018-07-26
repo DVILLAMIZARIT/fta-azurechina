@@ -130,10 +130,10 @@ To add the **IP address** of the client you access the database from, do the fol
 
   ![Screenshot](media/app-service/appmod-pic-0122.png)
 
-* For the **Server Name**, confirm or enter the server name previously saved to the clipboard (e.g. **contosoexpensesdbserver1.database.windows.net**).
+* For the **Server Name**, confirm or enter the server name previously saved to the clipboard (e.g. **mc-sqlsvr-fta-contosoexpenses.database.chinacloudapi.cn**).
 * Set **Authentication** to **SQL Server Authentication**.
 * Enter the database server **User Name** and **Password**. Select the checkbox **Remember Password**.
-* Select the database name **contosoexpensesdb**.
+* Select the database name **mc-sqldb-fta-ContosoExpenses**.
 * Click **Test Connection**.
 * You may get prompted to add a firewall rule so that your computer is allowed to access the database server. If so, click **Ok** to allow the firewall rule to be created.
 
@@ -153,7 +153,7 @@ To add the **IP address** of the client you access the database from, do the fol
 ## View the database using Visual Studio Tools
 * From **Visual Studio**, select **View** | **SQL Server Object Explorer**.
 * Expand the **SQL Server** node to view the connection.
-* Expand the connection **contosoexpensesdbserver1.database.windows.net**, and then **Databases | contosoexpensesdb | Tables**. Confirm the existence of the **dbo.Expense** table.
+* Expand the connection **mc-sqlsvr-fta-contosoexpenses.database.chinacloudapi.cn**, and then **Databases | mc-sqldb-fta-ContosoExpenses | Tables**. Confirm the existence of the **dbo.Expense** table.
 
   ![Screenshot](media/app-service/appmod-pic-0130.png)
 
@@ -174,21 +174,21 @@ To add the **IP address** of the client you access the database from, do the fol
 
 ## Create App Service
 * Login into the correct **Subscription** from the dropdown list.
-* Set the **Web App Name** to any name, e.g. **ContosoExpenesesWeb20170710012420**
+* Set the **Web App Name** to any name, e.g. **mc-web-fta-contosoexpenses**
 * Select the correct **Subscription** from the dropdown list.
-* Select the correct **Resource Group** from the dropdown list, e.g. **ContosoExpenses-RG-WestUS2**.
+* Select the correct **Resource Group** from the dropdown list, e.g. **mc-rg-fta-app**.
 
   ![Screenshot](media/app-service/appmod-pic-0138.png)
 
 * For the App Service Plan, click **New**.
-* To configure the app service plan, enter a name or use the default. e.g. **ContosoExpensesWeb20170710012420Plan**.
+* To configure the app service plan, enter a name or use the default. e.g. **mc-plan-fta-win**.
 * For **Location**, select your location. e.g. **West US 2**.
 * For **Size**, select **S1 (1 core, 1.75 GB RAM)**.
 * Click **OK**.
 
   ![Screenshot](media/app-service/appmod-pic-0139.png)
 
-* Make sure the correct **App Service Plan** is selected in the dropdown list. e.g. **ContosoExpensesWeb20170710012420Plan**.
+* Make sure the correct **App Service Plan** is selected in the dropdown list. e.g. **mc-plan-fta-win**.
 * Click **Create**.
 
   ![Screenshot](media/app-service/appmod-pic-0140.png)
@@ -219,15 +219,15 @@ To add the **IP address** of the client you access the database from, do the fol
 ## Update the Connection String in App Settings
 * First, let's capture the database server name to the clipboard.
   * Go back to the list of **Resource Groups**.
-  * Click on **ContosoExpenses-RG-WestUS2**.
-  * Click on **contosoexpensesdbserver**.
+  * Click on **mc-rg-fta-app**.
+  * Click on **mc-sqlsvr-fta-contosoexpenses**.
   * Click on **Properties**.
   * Highlight the database Server Name and **right-click** to select **Copy** to save it on the clipboard.
 
   ![Screenshot](media/app-service/appmod-pic-0150.png)
 
 * Navigate back to your **Resource Group**.
-* Click on the **App Service name** you deployed, e.g. **ContosoExpensesWeb20170710012420**.
+* Click on the **App Service name** you deployed, e.g. **mc-web-fta-contosoexpenses**.
 * From the Settings area, click on **Application settings**.
 * On the **Connection strings** area, type **ContosoExpensesDataEntities** as the connection string name.
 
