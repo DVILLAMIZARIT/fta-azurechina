@@ -296,7 +296,7 @@ To add the **IP address** of the client you access the database from, do the fol
 * From the **Settings area**, click on **Application Settings**.
 * Under **App settings**, add two new entries in the first and second textboxes.
   * Type **EmployeeName** and <**your name**>.
-  * Type **EmployeeApiUri** and paste in the URL of the API app, e.g. **http://contosoexpensesapi20170711011807.azurewebsites.net**
+  * Type **EmployeeApiUri** and paste in the URL of the API app, e.g. **http://mc-api-fta-contosoexpenses.chinacloudsites.cn/**
 * Click **Save**.
 
   ![Screenshot](media/app-service/appmod-pic-0172.png)
