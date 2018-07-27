@@ -292,7 +292,7 @@ To add the **IP address** of the client you access the database from, do the fol
 
   ![Screenshot](media/app-service/appmod-pic-0170.png)
 
-* Go back to the **Resource Group** and now select the **App Service** for the Expense web app, e.g. **mc-api-fta-contosoexpenses**.
+* Go back to the **Resource Group** and now select the **App Service** for the Expense web app, e.g. **mc-web-fta-contosoexpenses**.
 * From the **Settings area**, click on **Application Settings**.
 * Under **App settings**, add two new entries in the first and second textboxes.
   * Type **EmployeeName** and <**your name**>.
@@ -416,12 +416,12 @@ To add the **IP address** of the client you access the database from, do the fol
   * On line **#35** you will see name **Randy**.
   * Feel free to modify this for your own user name that you have entered in the web app's application settings before.
 * Right-click on the project **Contoso.Expenses.API**, select **Publish**.
-* Verify the publish profile is the one previously created (e.g. **contosoexpensesapi20170711011807**), and click **Publish**.
-* Once published, copy the URL in the output folder and paste it into a browser. e.g. **http://contosoexpensesapi20170711011807.azurewebsites.net**.
+* Verify the publish profile is the one previously created (e.g. **mc-api-fta-contosoexpenses**), and click **Publish**.
+* Once published, copy the URL in the output folder and paste it into a browser. e.g. **https://mc-api-fta-contosoexpenses.chinacloudsites.cn**.
 
 ## Testing out the API with Swagger
 * In the browser, add **/swagger** to the end of the URL, and press enter.
-  * e.g. **http://contosoexpensesapi20170711011807.azurewebsites.net/swagger**
+  * e.g. **https://mc-api-fta-contosoexpenses.chinacloudsites.cn/swagger**
   * This will load the Swagger page that will allow you to explore and test your APIs.
 * Click on **Employee**, and then click on **GET**.
 * Under **Parameters,** type in **Randy** for the **employeeName** parameter and then click **Try it Out!**
