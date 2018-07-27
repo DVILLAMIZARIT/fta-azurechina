@@ -205,8 +205,8 @@ To add the **IP address** of the client you access the database from, do the fol
 
 ## Launch the website from the Azure Portal
 * Navigate to the **Azure portal**.
-* Click on **Resource Group**, select **ContosoExpenses-RG-WestUS2**.
-* Click on the **App Service name** you deployed, e.g. **ContosoExpensesWeb20170710012420**.
+* Click on **Resource Group**, select **mc-rg-fta-app**.
+* Click on the **App Service name** you deployed, e.g. **mc-web-fta-contosoexpenses**.
 
   ![Screenshot](media/app-service/appmod-pic-0143.png)
 
@@ -266,10 +266,10 @@ To add the **IP address** of the client you access the database from, do the fol
 
 ## Create App Service
 * Login into the correct **Subscription** from the dropdown list.
-* Set the **API App Name** to any name, e.g. **contosoexpensesapi20170711011807**
+* Set the **API App Name** to any name, e.g. **mc-api-fta-contosoexpenses**
 * Select the correct **Subscription** from the dropdown list.
-* Select the correct **Resource Group** from the dropdown list, e.g. **ContosoExpenses-RG-WestUS2**.
-* Select the correct **App Service Plan** from the dropdown list, e.g. **ContosoExpensesWeb20170710012420Plan** from a previous step.
+* Select the correct **Resource Group** from the dropdown list, e.g. **mc-rg-fta-app**.
+* Select the correct **App Service Plan** from the dropdown list, e.g. **mc-plan-fta-win** from a previous step.
 * Click **Create**.
 
   ![Screenshot](media/app-service/appmod-pic-0164.png)
@@ -286,13 +286,13 @@ To add the **IP address** of the client you access the database from, do the fol
 
 ## Update the App Service Settings
 * From the Azure Portal, click on **Resource Groups**.
-* Click on **ContosoExpenses-RG-WestUS2**.
-* Click on the **App Service** you deployed for the API app, e.g. **ContosoExpensesAPI20170711011807**.
+* Click on **mc-rg-fta-app**.
+* Click on the **App Service** you deployed for the API app, e.g. **mc-api-fta-contosoexpenses**.
 * Click on **Overview** and copy the URL to the clipboard.
 
   ![Screenshot](media/app-service/appmod-pic-0170.png)
 
-* Go back to the **Resource Group** and now select the **App Service** for the Expense web app, e.g. **ContosoExpensesWeb20170710012420**.
+* Go back to the **Resource Group** and now select the **App Service** for the Expense web app, e.g. **mc-api-fta-contosoexpenses**.
 * From the **Settings area**, click on **Application Settings**.
 * Under **App settings**, add two new entries in the first and second textboxes.
   * Type **EmployeeName** and <**your name**>.
@@ -302,14 +302,14 @@ To add the **IP address** of the client you access the database from, do the fol
   ![Screenshot](media/app-service/appmod-pic-0172.png)
 
 ## Create a Storage Account
-* From the Azure Portal, click on **Resource Groups**, **ContosoExpenses-RG-WestUS2**.
+* From the Azure Portal, click on **Resource Groups**, **mc-rg-fta-app**.
 * Click on the **+ Add**, type **Storage** and press **Enter**.
 * Click on **Storage Account  - blob, file, table, queue**.
 * Click on **Create**.
 
   ![Screenshot](media/app-service/appmod-pic-0180.png)
 
-* Type in **contosoexpensesUNIQUEIDsa** (e.g. **contosoexpenses123sa**) for the **Name**. The name of a storage account needs to be globally unique.
+* Type in **UNINAMEcontosoexpenses** (e.g. **mcsaftacontosoexpenses**) for the **Name**. The name of a storage account needs to be globally unique.
 * If needed, change **Replication** to **Locally-redundant storage (LRS)**.
 * Make sure you select the correct **Resource Group** and **Location** as before.
 * Leave other fields with default options.
@@ -318,8 +318,8 @@ To add the **IP address** of the client you access the database from, do the fol
   ![Screenshot](media/app-service/appmod-pic-0182.png)
 
 ## Update the web.config for Storage Account
-* From the Azure Portal, click on **Resource Groups**, **ContosoExpenses-RG-WestUS2**.
-* Click on the **Storage Account** you deployed, e.g. **contosoexpensessa**.
+* From the Azure Portal, click on **Resource Groups**, **mc-rg-fta-app**.
+* Click on the **Storage Account** you deployed, e.g. **mcsaftacontosoexpenses**.
 * Under **Settings**, click on **Access keys**.
 
   ![Screenshot](media/app-service/appmod-pic-0186.png)
@@ -334,9 +334,10 @@ To add the **IP address** of the client you access the database from, do the fol
 
   ![Screenshot](media/app-service/appmod-pic-0190.png)
 
+## Create SendGrid Account SaaS
+
 ## Setup a Sendgrid Email Account
-* From the Azure Portal, click on **Resource Groups**, **ContosoExpenses-RG-WestUS2**.
-[comment]:<jacky: SendGrid Email Delivery is not available in china cloud>
+* From the Azure Portal, click on **Resource Groups**, **mc-rg-fta-app**.
 * Click on the **+ Add**, type **SendGrid** and press **Enter**.
 * Click on **SendGrid Email Delivery**.
 * Click on **Create**.
@@ -468,9 +469,9 @@ To add the **IP address** of the client you access the database from, do the fol
   * This publishes the change to the **Web.config** file to use the correct **StorageConnectionString**.
   * Alternatively, you could update the setting directly in the Azure portal for the web app, under the **Application settings** as before.
 * From the Azure Portal, click on **Resource Groups**.
-* Click on **ContosoExpenses-RG-WestUS2**.
-* Click on the **App Service** you deployed, e.g. **ContosoExpensesWeb20170710012420**.
-* Click on URL to launch the website. e.g. **http://contosoexpensesweb20170710012420.azurewebsites.net/**.
+* Click on **mc-rg-fta-app**.
+* Click on the **App Service** you deployed, e.g. **mc-web-fta-ContosoExpenses**.
+* Click on URL to launch the website. e.g. **http://mc-web-fta-contosoexpenses.chinacloudsites.cn/**.
 * From the website, click on **Expenses**.
 * Click on **Create New**.
 
