@@ -336,38 +336,8 @@ To add the **IP address** of the client you access the database from, do the fol
 
 ## Create SendGrid Account SaaS
 
-## Setup a Sendgrid Email Account
-* From the Azure Portal, click on **Resource Groups**, **mc-rg-fta-app**.
-* Click on the **+ Add**, type **SendGrid** and press **Enter**.
-* Click on **SendGrid Email Delivery**.
-* Click on **Create**.
-
-  ![Screenshot](media/app-service/appmod-pic-0194.png)
-
-* Type **DemoSendGridEmail** for the **Name**.
-* Type in a **Password**.
-* Select the **Subscription**.
-* Select the **Use existing** for the resource group.
-* Click on **Pricing Tier**, select **F1 Free**.
-* Click **Select**.
-
-  ![Screenshot](media/app-service/appmod-pic-0196.png)
-
-* Click on **Contact Information**.
-* Enter **First Name**, **Last Name**, **Email**, **Company**.
-* Click **Ok**.
-
-  ![Screenshot](media/app-service/appmod-pic-0198.png)
-
-* Click on **Legal Terms**, view, then click **Purchase**.
-
-  ![Screenshot](media/app-service/appmod-pic-0200.png)
-
-* Click **Create**, to create the SendGrid Email Account.
-  * Note down the USERNAME from the Configuration blade. We need the UserName & Password to login to SendGrid site to generate API Key.
-  ![Screenshot](media/app-service/appmod-pic-0202.png)
-
-* Using a **Microsoft Edge or Google Chrome browser**, navigate to **http://app.sendgrid.com**.
+* Using a **Microsoft Edge or Google Chrome browser**, setup a free try Sendgrid Email Account from https://www.sendgrid.com/
+* navigate to **http://app.sendgrid.com**.
 * Login using the **Username** &  **Password** you created earlier.
   * You will see the SendGrid dashboard/portal.
   ![Screenshot](media/app-service/appmod-pic-0224.png)
