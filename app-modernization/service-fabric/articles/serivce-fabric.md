@@ -32,8 +32,8 @@ After completing the exercises in this module, you will be able to:
 ## Create a Service Fabric Cluster
 
  * Follow these steps ([Global](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-via-portal), [China](https://docs.azure.cn/zh-cn/service-fabric/service-fabric-cluster-creation-via-portal)) to create a Secure Service Fabric Cluster in Azure
- * Create a Secure Service Fabric Cluster on ([Global](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-cluster-azure-ps), [China](https://docs.azure.cn/service-fabric/service-fabric-tutorial-create-cluster-azure-ps)) using PowerShell
- * [ARM Template](https://github.com/Azure/azure-quickstart-templates/tree/master/service-fabric-secure-cluster-5-node-1-nodetype) to Deploy Service Fabric Clusters. 
+ * Create a Secure Service Fabric Cluster on ([Global](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-cluster-azure-ps), [China](https://docs.azure.cn/service-fabric/service-fabric-tutorial-create-cluster-azure-ps)) Azure using PowerShell
+ * ARM Template ([Global](https://github.com/Azure/azure-quickstart-templates/tree/master/service-fabric-secure-cluster-5-node-1-nodetype), [China](\armtemplate\README.md) to deploy Service Fabric Clusters. 
 
 ##### **The template contains global azure end point. please replace "storageAccountEndPoint": "https://core.windows.net/"** to "https://core.chinacloudapi.cn"
  
