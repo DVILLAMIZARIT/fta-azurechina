@@ -29,11 +29,6 @@ After completing the exercises in this module, you will be able to:
          C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricLocalClusterManage And run ServiceFabricLocalClusterManager.exe
     * Download the starter application from [GitHub](https://github.com/Azure-Samples/service-fabric-dotnet-quickstart)
 
-## Walk through the voting sample application
- * [Create a .NET Service Fabric application in Azure](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-dotnet)
- * [Steb-by-Step](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-dotnet-app), build the .NET Voting application
- * [Download complete code](https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-quickstart/) for the Voting application
-
 ## Create a Service Fabric Cluster
 
  * Follow these steps ([Global](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-via-portal), [China](https://docs.azure.cn/zh-cn/service-fabric/service-fabric-cluster-creation-via-portal)) to create a Secure Service Fabric Cluster in Azure
@@ -44,6 +39,11 @@ After completing the exercises in this module, you will be able to:
  
   * [GitHub Quickstart Templates](https://github.com/Azure/azure-quickstart-templates)
   * [Azure Quickstart Templates](https://azure.microsoft.com/en-us/resources/templates/)
+
+## Walk through the voting sample application
+ * [Create a .NET Service Fabric application in Azure](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-dotnet)
+ * [Steb-by-Step](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-dotnet-app), build the .NET Voting application
+ * [Download complete code](https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-quickstart/) for the Voting application
 
 ## Additional Resources
 * Service Farbic Getting Started ([Global](http://aka.ms/ServiceFabric), [China](https://www.azure.cn/en-us/home/features/service-fabric/))
