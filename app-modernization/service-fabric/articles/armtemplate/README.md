@@ -1,6 +1,6 @@
-# this template is cloned from [azure-quickstart-templates](https://github.com/Azure/azure-quickstart-templates/tree/master/service-fabric-secure-cluster-5-node-1-nodetype). Customized for Azure China
-
 # Very simple deployment of a 5 Node secure Service Fabric Cluster with Azure Diagnostics enabled
+
+### Cloned from [azure-quickstart-templates](https://github.com/Azure/azure-quickstart-templates/tree/master/service-fabric-secure-cluster-5-node-1-nodetype). Customized for Azure China
 
 This template allows you to deploy a secure 5 node, Single Node Type Service Fabric Cluster running Windows Server 2016 Datacenter on aStandard_D2 Size VMSS with Azure Diagnostics turned on. This template assumes that you already have certificates uploaded to your keyvault.  If you want to create a new certificate run the New-ServiceFabricClusterCertificate.ps1 file in this sample.  That script will output the values necessary for deployment via the parameters file.
 
