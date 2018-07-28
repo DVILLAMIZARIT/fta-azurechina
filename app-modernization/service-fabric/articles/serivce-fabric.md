@@ -36,26 +36,29 @@ After completing the exercises in this module, you will be able to:
 
 ## Create a Service Fabric Cluster
 
- * Follow [these](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-via-portal) steps to create a Secure Service Fabric Cluster in Azure
- * [Create a Secure Service Fabric Cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-cluster-azure-ps) using PowerShell
- * [ARM Template](https://github.com/Azure/azure-quickstart-templates/tree/master/service-fabric-secure-cluster-5-node-1-nodetype) to Deploy Service Fabric Clusters 
- * [GitHub Quickstart Templates](https://github.com/Azure/azure-quickstart-templates)
- * [Azure Quickstart Templates](https://azure.microsoft.com/en-us/resources/templates/)
+ * Follow these steps ([Global](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-via-portal), [China](https://docs.azure.cn/zh-cn/service-fabric/service-fabric-cluster-creation-via-portal)) to create a Secure Service Fabric Cluster in Azure
+ * Create a Secure Service Fabric Cluster on ([Global](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-cluster-azure-ps), [China](https://docs.azure.cn/service-fabric/service-fabric-tutorial-create-cluster-azure-ps)) using PowerShell
+ * [ARM Template](https://github.com/Azure/azure-quickstart-templates/tree/master/service-fabric-secure-cluster-5-node-1-nodetype) to Deploy Service Fabric Clusters. 
+
+##### **The template contains global azure end point. please replace "storageAccountEndPoint": "https://core.windows.net/"** to "https://core.chinacloudapi.cn"
+ 
+  * [GitHub Quickstart Templates](https://github.com/Azure/azure-quickstart-templates)
+  * [Azure Quickstart Templates](https://azure.microsoft.com/en-us/resources/templates/)
 
 ## Additional Resources
-* Service Farbic Getting [Started](http://aka.ms/ServiceFabric)
-* Download the samples from [GitHub](http://github.com/Azure/ServiceFabric-Samples)
+* Service Farbic Getting Started ([Global](http://aka.ms/ServiceFabric), [China](https://www.azure.cn/en-us/home/features/service-fabric/))
+* Download the samples from [GitHub](https://github.com/Microsoft/service-fabric)
 * Service Fabric [Learning Path](https://azure.microsoft.com/en-us/documentation/learning-paths/service-fabric/)
 * [Ignite Session](https://myignite.microsoft.com/videos/3168)
 * Theory: [Microservices defined by Martin Fowler and James Lewis](http://martinfowler.com/microservices/)
-* Service Fabric [Service Communications](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-connect-and-communicate-with-services)
-* Create a [Windows Cluster](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-creation-for-windows-server/)
-* [On-Premise](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-creation-for-windows-server/#plan-and-prepare-your-cluster-deployment)
-* Update [Fabric Version](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-upgrade/#controlling-the-fabric-version-that-runs-on-your-cluster)
- * Upgrade [Windows Servers](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-upgrade-windows-server/)
- * [Service Fabric on Linux](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-linux-overview/)
- * Connect to a [Secure Cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-connect-to-secure-cluster)
- * [Upgrade and clean up Service Fabric Development environment](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-update-your-development-environment/)
- * [Troubleshoot](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-troubleshoot-local-cluster-setup/) an environment
- * [Elastic Search](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-diagnostic-how-to-use-elasticsearch/)
- * [Partitioning Concepts](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-concepts-partitioning/)
+* Service Fabric Service Communications ([Global](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-connect-and-communicate-with-services), [China](https://docs.azure.cn/zh-cn/service-fabric/service-fabric-connect-and-communicate-with-services))
+* Create a Windows Cluster on ([Global](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-creation-for-windows-server/), [China](https://docs.azure.cn/zh-cn/service-fabric/service-fabric-cluster-creation-for-windows-server)) Azure
+* [On-Premise] ([Global](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-creation-for-windows-server/#plan-and-prepare-your-cluster-deployment), [China](https://docs.azure.cn/zh-cn/service-fabric/service-fabric-cluster-creation-for-windows-server#plan-and-prepare-your-cluster-deployment))
+* Update Fabric Version ([Global](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-upgrade/#controlling-the-fabric-version-that-runs-on-your-cluster), [China](https://docs.azure.cn/zh-cn/service-fabric/service-fabric-cluster-upgrade#controlling-the-fabric-version-that-runs-on-your-cluster))
+ * Upgrade Windows Servers ([Global](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-upgrade-windows-server/), [China](https://docs.azure.cn/zh-cn/service-fabric/service-fabric-cluster-upgrade-windows-server))
+ * [Service Fabric on Linux [[Global](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-linux-overview/), [China](https://docs.azure.cn/zh-cn/service-fabric/service-fabric-deploy-anywhere))
+ * Connect to a Secure Cluster ([Global](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-connect-to-secure-cluster), [China](https://docs.azure.cn/zh-cn/service-fabric/service-fabric-connect-to-secure-cluster))
+ * (invalid) [Upgrade and clean up Service Fabric Development environment](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-update-your-development-environment/)
+ * [Troubleshoot a ([Global](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-troubleshoot-local-cluster-setup/), [China](https://docs.azure.cn/zh-cn/service-fabric/service-fabric-troubleshoot-local-cluster-setup)) environment
+ * Elastic Search ([Global](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-diagnostic-how-to-use-elasticsearch/), [China](https://docs.azure.cn/zh-cn/service-fabric/service-fabric-diagnostics-event-aggregation-eventflow)
+ * Partitioning Concepts ([Global](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-concepts-partitioning/), [China](https://docs.azure.cn/zh-cn/service-fabric/service-fabric-concepts-partitioning))
