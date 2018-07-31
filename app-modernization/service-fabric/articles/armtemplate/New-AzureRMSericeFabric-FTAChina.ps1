@@ -3,8 +3,8 @@ Set-Location "C:\kangxh\Github\fta-azurechina\app-modernization\service-fabric\a
 import-module C:\kangxh\PowerShell\allenk-Module-Azure.psm1
 Add-AzureRMAccount-Allenk -myAzureEnv mooncake
 
-$rgName = "mc-rg-fta-servicefabric"
-$rgLocation = "China East 2"
+$rgName = "mc-rg-fta-sf"
+$rgLocation = "China North"
 $sfParams = @{
     clusterName = "mcsfclusterfta";
     adminUsername = "ftachina";
