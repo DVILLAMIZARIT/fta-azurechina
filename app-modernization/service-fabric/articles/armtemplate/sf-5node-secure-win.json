@@ -128,7 +128,7 @@
     },
     "nodeTypeSize": {
       "type": "string",
-      "defaultValue": "Standard_D2_v2",
+      "defaultValue": "Standard_A2_v2",
       "metadata": {
         "description": "The VM size to use for cluster nodes."
       }
@@ -137,10 +137,10 @@
   "variables": {
     "dnsName": "[parameters('clusterName')]",
     "vmName": "vm",
-    "virtualNetworkName": "VNet",
+    "virtualNetworkName": "mc-vnet-servicefabric",
     "addressPrefix": "10.0.0.0/16",
     "nicName": "NIC",
-    "lbIPName": "PublicIP-LB-FE",
+    "lbIPName": "mc-pip-sf-LB-FE",
     "overProvision": false,
     "nt0applicationStartPort": "20000",
     "nt0applicationEndPort": "30000",
@@ -153,8 +153,8 @@
     "subnet0Ref": "[resourceId('Microsoft.Network/virtualNetworks/subnets/', variables('virtualNetworkName'), variables('subnet0Name'))]",
     "supportLogStorageAccountName": "[concat( uniqueString(resourceGroup().id),'2')]",
     "applicationDiagnosticsStorageAccountName": "[concat(uniqueString(resourceGroup().id), '3' )]",
-    "lbName": "[concat('LB','-', parameters('clusterName'),'-',variables('vmNodeType0Name'))]",
-    "lbID0": "[resourceId('Microsoft.Network/loadBalancers',concat('LB','-', parameters('clusterName'),'-',variables('vmNodeType0Name')))]",
+    "lbName": "[concat('mc-lb','-', parameters('clusterName'),'-',variables('vmNodeType0Name'))]",
+    "lbID0": "[resourceId('Microsoft.Network/loadBalancers',concat('mc-lb','-', parameters('clusterName'),'-',variables('vmNodeType0Name')))]",
     "lbIPConfig0": "[concat(variables('lbID0'),'/frontendIPConfigurations/LoadBalancerIPConfig')]",
     "lbPoolID0": "[concat(variables('lbID0'),'/backendAddressPools/LoadBalancerBEAddressPool')]",
     "lbProbeID0": "[concat(variables('lbID0'),'/probes/FabricGatewayProbe')]",
@@ -449,7 +449,7 @@
                   "protectedSettings": {
                     "storageAccountName": "[variables('applicationDiagnosticsStorageAccountName')]",
                     "storageAccountKey": "[listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('applicationDiagnosticsStorageAccountName')),'2015-05-01-preview').key1]",
-                    "storageAccountEndPoint": "https://core.windows.net/"
+                    "storageAccountEndPoint": "https://core.chinacloudapi.cn/"
                   },
                   "publisher": "Microsoft.Azure.Diagnostics",
                   "settings": {
