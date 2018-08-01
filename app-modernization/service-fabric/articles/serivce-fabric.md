@@ -35,11 +35,14 @@ After completing the exercises in this module, you will be able to:
  * Create a Secure Service Fabric Cluster on ([Global](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-cluster-azure-ps), [China](https://docs.azure.cn/service-fabric/service-fabric-tutorial-create-cluster-azure-ps)) Azure using PowerShell
  * Use ARM Template ([Global](https://github.com/Azure/azure-quickstart-templates/tree/master/service-fabric-secure-cluster-5-node-1-nodetype), [China](./armtemplate/README.md)) to deploy Service Fabric Clusters. 
 
-  * [GitHub Quickstart Templates](https://github.com/Azure/azure-quickstart-templates)
-  * [Azure Quickstart Templates](https://azure.microsoft.com/en-us/resources/templates/)
+     * [GitHub Quickstart Templates](https://github.com/Azure/azure-quickstart-templates)
+     * [Azure Quickstart Templates](https://azure.microsoft.com/en-us/resources/templates/)
 
 ## Walk through the voting sample application
  * Create a .NET Service Fabric application in Azure ([Global](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-dotnet), [China](https://docs.azure.cn/zh-cn/service-fabric/service-fabric-quickstart-dotnet))
+
+    * try the suggestion on this [link](https://stackoverflow.com/questions/45821658/asp-net-core-2-mvc-error-nu1202-creating-project-on-vs-2017-and-net-cli#46876615) in VS2017 report build error for nuget package.
+
  * [Steb-by-Step] ([Global](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-dotnet-app), [China](https://docs.azure.cn/zh-cn/service-fabric/service-fabric-tutorial-create-dotnet-app)) , build the .NET Voting application
  * [Download complete code](https://azure.microsoft.com/en-us/resources/samples/service-fabric-dotnet-quickstart/) for the Voting application
 
