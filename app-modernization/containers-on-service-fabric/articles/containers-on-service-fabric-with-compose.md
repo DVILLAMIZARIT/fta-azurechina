@@ -211,7 +211,7 @@ In order to run the application now, we will need to create a cluster to deploy 
 5. On the *Summary* blade, click **Create**.
     > **Note:** This will take several minutes and even once the creation of the cluster is complete, it will still need a few more minutes to perform some internal updates.
 
-    ![Screenshot](media/containers-on-service-fabric-with-compose/sf-compose022-cert.png)
+    ![Screenshot](media/containers-on-service-fabric-with-compose/sf-compose022-Cert.png)
 
 ## Migrate Application to Containers
 Now that all the infrastructure and dependencies are deployed it's time to start modernizing the application.
