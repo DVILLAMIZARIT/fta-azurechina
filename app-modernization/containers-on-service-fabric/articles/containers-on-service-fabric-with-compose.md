@@ -213,6 +213,13 @@ In order to run the application now, we will need to create a cluster to deploy 
 
     ![Screenshot](media/containers-on-service-fabric-with-compose/sf-compose022-Cert.png)
 
+6. Go to the Key Vault and download the certificate PFX file.
+    ![Screenshot](media/containers-on-service-fabric-with-compose/sf-compose022-Cert-kv.png)
+    ![Screenshot](media/containers-on-service-fabric-with-compose/sf-compose022-Cert-kv-download.png)
+
+7. On the System running Visual Studio, install the cert to its default store (CurrentUser -> Personal)
+
+
 ## Migrate Application to Containers
 Now that all the infrastructure and dependencies are deployed it's time to start modernizing the application.
 
