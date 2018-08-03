@@ -53,12 +53,12 @@ To complete this POC, you will need
 * **Contoso.Expenses.Web** - This is the Internal Business Web App.
 
 ## Create the SQL Database
-1. Log into the [Azure portal](http://portal.azure.com).
+1. Log into the [Azure portal](http://portal.azure.cn).
 2. Click on **+New**, type **Resource Group** in the search area, press **Enter**.
 3. Click on **Resource Group** and the click on **Create**.
-4.  Enter a descriptive name (e.g. **ContosoExpenses-RG-WE**) as the **Resource group name**.
+4.  Enter a descriptive name (e.g. **mc-rg-fta-sf**) as the **Resource group name**.
 5. Select your **Subscription**.
-6. Select your **Resource Group Location** (e.g. West Europe).
+6. Select your **Resource Group Location** (e.g. China North - ACR only availalbe in this region).
 7. Click **Create**.
 
   ![Screenshot](media/containers-on-service-fabric-with-compose/sf-compose002.png)
@@ -72,15 +72,15 @@ To complete this POC, you will need
   ![Screenshot](media/containers-on-service-fabric-with-compose/sf-compose004.png)
 
 10. Click **Create**.
-11. Enter your **database name** (e.g. **contosoexpensesdb**). 
+11. Enter your **database name** (e.g. **mc-sqldb-fta-ContosoExpenses**). 
 12. For **Resource Group**, select **Use Existing**, then select the **Resource Group** created earlier (e.g. ContosoExpenses-RG-WE).
 13. For **Server**, click **Configure required settings**.
 14. Click **Create a new Server**.
-15. For **Server Name**, your SQL Server Name (e.g. **contosoexpensesdbsrv**).
+15. For **Server Name**, your SQL Server Name (e.g. **mc-sqlsvr-fta-contosoexpenses**).
 > **Note:** The server name needs to be globally unique, so add a number to the end of name.
 16. Enter a **Server admin login** and **Password**.
 > **Note:** Save the **Login name** and **Password**, as you’ll need it later.
-17. For Location select the same location as before (e.g. **West Europe**).
+17. For Location select the same location as before (e.g. **China North**).
 18. Click **Select** to save the server settings.
 
   ![Screenshot](media/containers-on-service-fabric-with-compose/sf-compose005.png)
@@ -102,7 +102,7 @@ To complete this POC, you will need
 
 ## Allow Client IP in SQL Database Firewall
 To add the **IP address** of the client you access the database from, do the following steps:
-1. Select the database created previously (e.g. contosoexpensesdb), click on **Set server firewall**.
+1. Select the database created previously (e.g. mc-sqldb-fta-contosoexpenses), click on **Set server firewall**.
 
 ![Screenshot](media/containers-on-service-fabric-with-compose/sf-compose008.png)
 
@@ -132,7 +132,7 @@ To add the **IP address** of the client you access the database from, do the fol
 7. For the **Server Name**, confirm or enter the server name previously saved to the clipboard (e.g. **contosoexpensesdbsrv.database.windows.net**).
 8. Set **Authentication** to **SQL Server Authentication**.
 9. Enter the database server **User Name** and **Password**. Select the checkbox **Remember Password**.
-10. Select the database name **contosoexpensesdb**.
+10. Select the database name **mc-sqldb-fta-contosoexpenses**.
 11. Click **Test Connection**.
 > **Note:** You may get prompted to add a firewall rule so that your computer is allowed to access the database server. If so, click **Ok** to allow the firewall rule to be created.
 ![Screenshot](media/containers-on-service-fabric-with-compose/sf-compose014.png)
@@ -150,14 +150,14 @@ To add the **IP address** of the client you access the database from, do the fol
 ## View the database using Visual Studio Tools
 1. From **Visual Studio**, select **View** | **SQL Server Object Explorer**.
 2. Expand the **SQL Server** node to view the connection.
-3. Expand the connection **contosoexpensesdbsrv.database.windows.net**, and then **Databases | contosoexpensesdb | Tables**. Confirm the existence of the **dbo.Expense** table.
+3. Expand the connection **mc-sqlsvr-fta-contosoexpenses-sf.database.chinacloudapi.cn**, and then **Databases | contosoexpensesdb | Tables**. Confirm the existence of the **dbo.Expense** table.
 
   ![Screenshot](media/containers-on-service-fabric-with-compose/sf-compose017.png)
 
 ## Create Storage Account
 You will create a new Azure Storage Account because the Application uses Azure Storage Queues to persist transactions when the database is not available.
 
-1. Open [Azure Portal](https://portal.azure.com), click in **New** and search for Storage Account. 
+1. Open [Azure Portal](https://portal.azure.cn), click in **New** and search for Storage Account. 
 
   ![Screenshot](media/containers-on-service-fabric-with-compose/sf-compose030.png)
 
