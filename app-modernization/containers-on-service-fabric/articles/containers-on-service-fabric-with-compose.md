@@ -176,7 +176,7 @@ You will create a new Azure Storage Account because the Application uses Azure S
 ## Configure Container Registry
 We will need a place to store the containers that we are creating for this application. For this example we will be creating an Azure Container Registry.
 
-1. Log into the [Azure portal](https://portal.azure.com).
+1. Log into the [Azure portal](https://portal.azure.cn).
 2. Create a new resource and search the marketplace for **Azure Container** and select **Azure Container Registry**.
 
     ![Screenshot](media/containers-on-service-fabric-with-compose/sf-compose018.png)
@@ -207,9 +207,11 @@ In order to run the application now, we will need to create a cluster to deploy 
 
     ![Screenshot](media/containers-on-service-fabric-with-compose/sf-compose022.png)
 
-4. On the *Security* blade, select **Unsecure** and then click **Ok**.
+4. On the *Security* blade, select **Basic** and select Key Vault to store the certificate
 5. On the *Summary* blade, click **Create**.
     > **Note:** This will take several minutes and even once the creation of the cluster is complete, it will still need a few more minutes to perform some internal updates.
+
+    ![Screenshot](media/containers-on-service-fabric-with-compose/sf-compose022-cert.png)
 
 ## Migrate Application to Containers
 Now that all the infrastructure and dependencies are deployed it's time to start modernizing the application.
