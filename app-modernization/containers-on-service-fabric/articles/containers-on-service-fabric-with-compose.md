@@ -36,7 +36,7 @@ After completing this exercise, you will be able to:
 To complete this POC, you will need
 * Access to a Microsoft Azure subscription and permissions to deploy resources
 * Visual Studio 2017
-* [Docker for Windows](https://www.docker.com/docker-windows)
+* [Docker for Windows](https://www.docker.com/docker-windows) [server](https://docs.docker.com/install/windows/docker-ee/)
 * [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)
 * You will need the [Service Fabric SDK](http://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) installed
 * You must download the [Contoso Expenses Demo Application](https://fasttrackforazure.blob.core.windows.net/sourcecode/Contoso.Expenses.zip)
@@ -227,8 +227,8 @@ Now that all the infrastructure and dependencies are deployed it's time to start
 2. Expand project Contoso.Expenses.Web, open Web.Config file and edit the  connection strings **DefaultConnection** and **ContosoExpensesDataEntities** to new SQL Database. Replace **{your_username}** and **{your_password}** by the values specified during the database creation.
 
 ````XML
-<add name="DefaultConnection" connectionString="Server=tcp:contosoexpensesdbsrv.database.windows.net,1433;Initial Catalog=contosoexpensesdb;Persist Security Info=False;User ID={your_username};Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" providerName="System.Data.SqlClient" />
-<add name="ContosoExpensesDataEntities" connectionString="metadata=res://*/Models.ContosoExpensesModel.csdl|res://*/Models.ContosoExpensesModel.ssdl|res://*/Models.ContosoExpensesModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=tcp:contosoexpensesdbsrv.database.windows.net,1433;Initial Catalog=contosoexpensesdb;Persist Security Info=False;User ID={your_username};Password={your_password};MultipleActiveResultSets=False;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+<add name="DefaultConnection" connectionString="Server=tcp:mc-sqlsvr-fta-contosoexpenses-sf.database.chinacloudapi.cn,1433;Initial Catalog=mc-sqldb-fta-contosoexpenses;Persist Security Info=False;User ID={your_username};Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" providerName="System.Data.SqlClient" />
+<add name="ContosoExpensesDataEntities" connectionString="metadata=res://*/Models.ContosoExpensesModel.csdl|res://*/Models.ContosoExpensesModel.ssdl|res://*/Models.ContosoExpensesModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=tcp:mc-sqlsvr-fta-contosoexpenses-sf.database.chinacloudapi.cn,1433;Initial Catalog=mc-sqldb-fta-contosoexpenses;Persist Security Info=False;User ID={your_username};Password={your_password};MultipleActiveResultSets=False;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
     
 ````
 > **Note:** The connection string for your SQL Database is in the Azure Portal.
@@ -244,7 +244,7 @@ Now that all the infrastructure and dependencies are deployed it's time to start
 4. Update the Storage Account Connection String to the value you copied during the Storage Account creation step.
 
 ````XML
-<add key="StorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=[ACCOUNT-NAME];AccountKey=[ACCOUNT-KEY];EndpointSuffix=core.windows.net" />
+<add key="StorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=[ACCOUNT-NAME];AccountKey=[ACCOUNT-KEY];EndpointSuffix=core.chinacloudapi.cn" />
 ````
 > **Note:** This will add support to Azure Storage Queues to the Contoso.Expenses application.
 
@@ -263,7 +263,7 @@ Now that all the infrastructure and dependencies are deployed it's time to start
 8. Check **docker-compose.yml** file in **docker-compose** project. 
 
 ````yml
-version: '3'
+version: '3.4'
 
 services:
   contoso.expenses.web:
@@ -304,7 +304,7 @@ COPY /obj/Docker/publish .
 ````docker
 C:\..\Contoso.Expenses.Web>docker build -t [YOUR-REGISTRY]/contoso.expenses.web:1.0 .
 ````
-> **Note:** Replace [YOUR-REGISTRY] with your own registry name (e.g. sfcomposedevcr.azurecr.io). This is recommended pattern for images that are pulled from or pushed to external registries. 
+> **Note:** Replace [YOUR-REGISTRY] with your own registry name (e.g. mcacrfta.azurecr.cn). This is recommended pattern for images that are pulled from or pushed to external registries. 
 
 11. Repeat step 10 for project **contoso.expenses.api**.
 
@@ -317,22 +317,22 @@ docker images
 ````BASH
 C:\..\Contoso.Expenses.Web>docker images
 REPOSITORY                                       TAG                 IMAGE ID            CREATED             SIZE
-sfcomposedevcr.azurecr.io/contoso.expenses.web   1.0                 9a8606d9e43f        4 minutes ago       12.6GB
-sfcomposedevcr.azurecr.io/contoso.expenses.api   1.0                 8030f7171b4f        12 minutes ago      12.6GB
+mcacrfta.azurecr.cn/contoso.expenses.web         1.0                 9a8606d9e43f        4 minutes ago       12.6GB
+mcacrfta.azurecr.cn/contoso.expenses.api         1.0                 8030f7171b4f        12 minutes ago      12.6GB
 microsoft/aspnet                                 4.7                 eea632769046        6 days ago          12.6GB
 ````
 
 ## Push Containers to Registry
 Now that the images have been created it's time to push them to the Registry. 
 
-1. Open [Azure Portal](https://portal.azure.com) and navigate to your **Azure Container Registry**. Copy **Login server**, **Username** and **Password** values.
+1. Open [Azure Portal](https://portal.azure.cn) and navigate to your **Azure Container Registry**. Copy **Login server**, **Username** and **Password** values.
 
 ![Screenshot](media/containers-on-service-fabric-with-compose/sf-compose027.png)
 
 2. Open a command prompt and login to Azure Container Registry.
 
 ````BASH
-C:\..\Contoso.Expenses.Web>docker login sfcomposedevcr.azurecr.io
+C:\..\Contoso.Expenses.Web>docker login mcacrfta.azurecr.cn
 Username: sfcomposedevcr
 Password:
 Login Succeeded
@@ -341,8 +341,8 @@ Login Succeeded
 3. Push Contoso.Expenses.Web image to Azure Container Registry. 
 
 ````BASH
-C:\..\Contoso.Expenses.Web>docker push sfcomposedevcr.azurecr.io/contoso.expenses.web:1.0
-The push refers to a repository [sfcomposedevcr.azurecr.io/contoso.expenses.web]
+C:\..\Contoso.Expenses.Web>docker push mcacrfta.azurecr.cn/contoso.expenses.web:1.0
+The push refers to a repository [mcacrfta.azurecr.cn/contoso.expenses.web]
 4c48207d1889: Pushing [=================>                                 ]  14.06MB/41.06MB
 d9809dd547bc: Pushed
 19f2e48542cd: Pushed
@@ -371,14 +371,14 @@ At this point the images are already hosted in Azure Container Registry so the n
 
 2. **Update the image names** and ports. This is the file we will use to deploy the application to Azure Service Fabric.
 
-> **Note:** Make sure that your container registry is correct (e.g. sfcomposedevcr.azurecr.io)
+> **Note:** Make sure that your container registry is correct (e.g. mcacrfta.azurecr.cn)
 
 ````YML
 version: '3'
 
 services:
   contoso.expenses.web:
-    image: sfcomposedevcr.azurecr.io/contoso.expenses.web:1.0
+    image: mcacrfta.azurecr.cn/contoso.expenses.web:1.0
     build:
       context: .\Contoso.Expenses.Web
       dockerfile: Dockerfile
@@ -386,7 +386,7 @@ services:
       - "80:80"
 
   contoso.expenses.api:
-    image: sfcomposedevcr.azurecr.io/contoso.expenses.api:1.0
+    image: mcacrfta.azurecr.cn/contoso.expenses.api:1.0
     build:
       context: .\Contoso.Expenses.API
       dockerfile: Dockerfile
@@ -439,7 +439,7 @@ version: '3'
 
 services:
   contoso.expenses.web:
-    image: sfcomposedevcr.azurecr.io/contoso.expenses.web:1.1
+    image: mcacrfta.azurecr.cn/contoso.expenses.web:1.1
     build:
       context: .\Contoso.Expenses.Web
       dockerfile: Dockerfile
@@ -447,7 +447,7 @@ services:
       - "80:80"
 
   contoso.expenses.api:
-    image: sfcomposedevcr.azurecr.io/contoso.expenses.api:1.1
+    image: mcacrfta.azurecr.cn/contoso.expenses.api:1.1
     build:
       context: .\Contoso.Expenses.API
       dockerfile: Dockerfile
@@ -458,18 +458,18 @@ services:
 ```` BASH
 C:\..\Contoso.Expenses.Web>docker images
 REPOSITORY                                       TAG                 IMAGE ID            CREATED             SIZE
-sfcomposedevcr.azurecr.io/contoso.expenses.web   1.0                 44e0f6ad7624        About an hour ago   12.6GB
-sfcomposedevcr.azurecr.io/contoso.expenses.web   1.1                 44e0f6ad7624        About an hour ago   12.6GB
-sfcomposedevcr.azurecr.io/contoso.expenses.api   1.0                 449ee2643df0        About an hour ago   12.6GB
-sfcomposedevcr.azurecr.io/contoso.expenses.api   1.1                 449ee2643df0        About an hour ago   12.6GB
+mcacrfta.azurecr.cn/contoso.expenses.web   1.0                 44e0f6ad7624        About an hour ago   12.6GB
+mcacrfta.azurecr.cn/contoso.expenses.web   1.1                 44e0f6ad7624        About an hour ago   12.6GB
+mcacrfta.azurecr.cn/contoso.expenses.api   1.0                 449ee2643df0        About an hour ago   12.6GB
+mcacrfta.azurecr.cn/contoso.expenses.api   1.1                 449ee2643df0        About an hour ago   12.6GB
 microsoft/aspnet                                 4.7                 eea632769046        6 days ago          12.6GB
 ````
 
 3. Push new images to registry.
 
 ````BASH
-docker push sfcomposedevcr.azurecr.io/contoso.expenses.web:1.1
-docker push sfcomposedevcr.azurecr.io/contoso.expenses.api:1.1
+docker push mcacrfta.azurecr.cn/contoso.expenses.web:1.1
+docker push mcacrfta.azurecr.cn/contoso.expenses.api:1.1
 ````
 > This time the push should be much faster because most layers are already in the registry.
 
