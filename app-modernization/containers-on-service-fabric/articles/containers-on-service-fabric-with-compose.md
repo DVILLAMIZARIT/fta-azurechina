@@ -280,7 +280,9 @@ services:
 ````
 > **Note:** This file is the declaration of the services that compose our application and how each of them are built. 
 
-9. Right-click your Solution and select **Build Solution**.
+9. Right-click your Solution and select **Build Solution**. Make sure to build the **Release** version.
+![Screenshot](media/containers-on-service-fabric-with-compose/sf-compose026-a.png)
+
 > **Note:** In order to build the solution successfuly you need to make sure you have installed **Docker for Windows** and configured it to run in **Windows Containers**.
 
 ![Screenshot](media/containers-on-service-fabric-with-compose/sf-compose026.png)
@@ -333,7 +335,7 @@ Now that the images have been created it's time to push them to the Registry.
 
 ````BASH
 C:\..\Contoso.Expenses.Web>docker login mcacrfta.azurecr.cn
-Username: sfcomposedevcr
+Username: mcacrfta
 Password:
 Login Succeeded
 ````
@@ -399,7 +401,9 @@ services:
 4. Connect to your Azure Service Fabric Cluster
 
 ````POWERSHELL
-Connect-ServiceFabricCluster -ConnectionEndpoint composeapps-sf.westeurope.cloudapp.azure.com:19000
+Connect-ServiceFabricCluster -ConnectionEndpoint mcsfclusterfta.chinanorth.cloudapp.chinacloudapi.cn:19000 -KeepAliveIntervalInSec 10 -X509Credential -ServerCertThumbprint 535114B4FC6DB5547684BE384AF4838683B56C7E -FindType FindByThumbprint -FindValue 535114B4FC6DB5547684BE384AF4838683B56C7E -StoreLocation CurrentUser -StoreName My
+
+
 ````
 > **Note:** The Service Fabric Connection Endpoint is shown in the Azure Portal. Navigate to your Service Fabric instance and find it in the overview tab.
 
@@ -489,7 +493,7 @@ Start-ServiceFabricComposeDeploymentUpgrade -DeploymentName contoso -Compose doc
 ## Scale Application Services
 Service Fabric allows you to scale services independently. This way you can scale based on current load in each service.
 
-1. Navigate to Service Fabric Explorer (e.g. http://composeapps-sf.westeurope.cloudapp.azure.com:19080), right-click the **contoso.expenses.api node** and select **Scale Service**.
+1. Navigate to Service Fabric Explorer (e.g. https://mcsfclusterfta.chinanorth.cloudapp.chinacloudapi.cn:19080), right-click the **contoso.expenses.api node** and select **Scale Service**.
 
 ![Screenshot](media/containers-on-service-fabric-with-compose/sf-compose038.png)
 
