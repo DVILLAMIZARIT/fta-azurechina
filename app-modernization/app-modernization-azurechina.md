@@ -18,9 +18,9 @@ See our [FastTrack for Azure landing page](https://github.com/Azure/FastTrackFor
 * Internal business app to Containers on Service Fabric
     * POC Scenario Contoso Expenses: Modernizing an Application to Windows Containers - Multi-Container deployment with DockerCompose on Service Fabric on Azure [China](containers-on-service-fabric/articles/containers-on-service-fabric-with-compose.md)
 
-* Modernize Traditional Applications using Containers
+* Modernize Traditional Applications using Containers 
    * [POC Scenario: Containerize ASP.NET Full Framework Application](containers/articles/aspnet-fullframework.md)
-   * [POC Scenario: Containerize ASP.NET Core Application](containers/articles/aspnet-core.md)
+   * POC Scenario: Containerize ASP.NET Core Application using Azure Container Registry in [China](containers/articles/aspnet-core.md)
    * [POC Scenario: Containerize a NodeJS Application](containers/articles/node-todo.md)
    * [POC Scenario - NA in China Azure: Containerize Contoso Expenses Full Framework Application on Windows Containers - Kubernetes in Azure Container Services](containers/articles/acs-with-kubernetes.md)
 

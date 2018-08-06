@@ -26,7 +26,7 @@ To complete this POC, you will need:
 * You will need the [sample application](https://ftashared.blob.core.windows.net/demos/Node-Todo.zip) we are deploying
 
 ## Create Azure PostgreSQL
-1. Open the [Azure portal](https://portal.azure.com)
+1. Open the [Azure portal](https://portal.azure.cn)
 
 2. Click to create a new resource. In the search dialog, search for *postgresql* and click the search button.
 
@@ -35,9 +35,9 @@ To complete this POC, you will need:
     ![Screenshot](images/node-container/node-01.png)
 
 4. In the creation blade, provide the following values (you can substitute your own, but keep track of them):
-    * Server Name: **postgrescontainerdemo**
-    * Resource Group: **NodeContainer-POC-RG**
-    * Server admin login name: **demo**
+    * Server Name: **mc-postgre-fta**
+    * Resource Group: **mc-rg-fta-nodejs**
+    * Server admin login name: **ftachina**
     * Password: *{Provide a value}*
     * Pricing Tier: **Basic**
     
@@ -122,11 +122,11 @@ We will need a place to store the containers we are going to build in subsequent
     ```cmd
     docker build -t {Your_Registry}/node-todo:latest .
     ```
-    Where {Your_Registry} is the name of the registry you created in the Azure portal e.g. *contosoregistry.azurecr.io*
+    Where {Your_Registry} is the name of the registry you created in the Azure portal e.g. *mcacrfta.azurecr.cn*
 
     You should see output similar to the below:
     ```
-    docker build -t containerpocregistry.azurecr.io/node-todo:latest .
+    docker build -t mcacrfta.azurecr.cn/node-todo:latest .
     Sending build context to Docker daemon  63.91MB
     Step 1/13 : FROM node:6-alpine
     ---> cfabdfd5dcc7
@@ -143,7 +143,7 @@ We will need a place to store the containers we are going to build in subsequent
     Removing intermediate container 933cab5bb79e
     ---> 066ef104745d
     Successfully built 066ef104745d
-    Successfully tagged containerpocregistry.azurecr.io/node-todo:latest
+    Successfully tagged mcacrfta.azurecr.cn/node-todo:latest
     ```
 
 4. In the **host** folder, we have a file called **nginx.conf** which is the configuration file for describing how our nginx host will work. We will need to create a Dockerfile for this as well. In that Dockerfile add the following contents
@@ -172,8 +172,24 @@ We will need a place to store the containers we are going to build in subsequent
     ```
     Once done, you should see something similar to:
     ```
-    docker push containerpocregistry.azurecr.io/node-todo:latest
-    The push refers to repository [containerpocregistry.azurecr.io/node-todo]
+    docker push mcacrfta.azurecr.cn/node-todo-host:latest
+    ```
+
+6. Run the command `docker images` to see the images you just created.
+
+7. Now, login to your registry with the command `docker login {Your_Registry}`
+    > **Note**: The username and password are the values we saved earlier.
+
+    Once completed, you should see `Login Succeeded`
+
+8. Push the container to your registry with the following command:
+    ```cmd
+    docker push {Your_Registry}/node-todo:latest
+    ```
+    Once done, you should see something similar to:
+    ```
+    docker push mcacrfta.azurecr.cn/node-todo:latest
+    The push refers to repository [mcacrfta.azurecr.cn/node-todo]
     f9fcf76b4591: Pushed
     b8df0ba3fdba: Pushed
     7893b1bfb318: Pushed
@@ -184,6 +200,7 @@ We will need a place to store the containers we are going to build in subsequent
     ```cmd
     docker push {Your_Registry}/node-todo-host:latest
     ```
+
 
 ## Run in an Ubuntu Image
 We will now start to look at hosting options for running our containers. In this first example, we are going to look at running our application on an Ubuntu VM with 3 instances of our app running behind an nginx front end.
