@@ -43,7 +43,7 @@ FROM microsoft/dotnet:2.0-sdk-nanoserver
 
 8. Open a PowerShwll prompt to the same folder as the Dockerfile. Run the following command to build the Docker image
     ```
-    docker build -t fezcontainerreg.azurecr.io/sampleaspnetcorecontainerized:1.0 .
+    docker build -t mcacrfta.azurecr.cn/sampleaspnetcorecontainerized:1.0 .
     ```
 9. The container will start to download and install and you should see output similar to that below:
     ![Screenshot](images/aspnet-core/NetCoreImageAfterDockerBuildRunningOutput-005.png)
@@ -56,7 +56,7 @@ FROM microsoft/dotnet:2.0-sdk-nanoserver
 
 11. To run the container, execute the following
     ```
-    docker run --name youraspnetcore fezcontainerreg.azurecr.io/sampleaspnetcorecontainerized:1.0
+    docker run --name youraspnetcore mcacrfta.azurecr.cn/sampleaspnetcorecontainerized:1.0
     ```
 
 12. Run `docker ps`
