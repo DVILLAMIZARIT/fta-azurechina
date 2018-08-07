@@ -21,6 +21,6 @@ See our [FastTrack for Azure landing page](https://github.com/Azure/FastTrackFor
 * Modernize Traditional Applications using Containers 
    * [POC Scenario: Containerize ASP.NET Full Framework Application](containers/articles/aspnet-fullframework.md)
    * POC Scenario: Containerize ASP.NET Core Application using Azure Container Registry in [China](containers/articles/aspnet-core.md)
-   * [POC Scenario: Containerize a NodeJS Application](containers/articles/node-todo.md)
+   * POC Scenario: Containerize a NodeJS Application using Azure Container Registry in [China](containers/articles/node-todo.md)
    * [POC Scenario - NA in China Azure: Containerize Contoso Expenses Full Framework Application on Windows Containers - Kubernetes in Azure Container Services](containers/articles/acs-with-kubernetes.md)
 
