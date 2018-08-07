@@ -276,10 +276,10 @@ We will now start to look at hosting options for running our containers. In this
 
 16. In the editor, add the following contents (replace with your values if they are different):
     ```
-    PGUSER=demo@postgrescontainerdemo.postgres.database.azure.com
-    PGPASSWORD={Your_Password}
+    PGUSER=ftachina@mc-postgre-fta.postgres.database.chinacloudapi.cn
+    PGPASSWORD=xxxxxxxxxxx
     PGDATABASE=postgres
-    PGSERVER=postgrescontainerdemo.postgres.database.azure.com
+    PGSERVER=mc-postgre-fta.postgres.database.chinacloudapi.cn
     ```
 
 17. In the editor, type `Ctrl+O` to write the file. Give it the name **prod.env** and hit `Enter` and `Ctrl+X` to save and exit.
@@ -292,11 +292,11 @@ We will now start to look at hosting options for running our containers. In this
     
     ![Screenshot](images/node-container/node-13.png)
 
-19. Outside of the Linux VM, open a browser and go to the hostname of your VM e.g. **http://{Your_VM}.eastus.cloudapp.azure.com** and you should see the To-Do application running.
+19. Outside of the Linux VM, open a browser and go to the hostname of your VM e.g. **http://{Your_VM}.chinanorth.cloudapp.chinacloudapi.cn** and you should see the To-Do application running.
     
     ![Screenshot](images/node-container/node-14.png)
 
-## Create Azure Web App
+## Create Azure Web App - this feature is not available on Azure China yet. Stay tuned. 
 If you would rather avoid having to spin up a dedicated VM for hosting your application, another option is to use the Web App for Containers solution. This will provide a PaaS environment where we can deploy and scale our app without having to worry about any of the underlying infrastructure.
 
 1. Open the Azure portal
