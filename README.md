@@ -26,8 +26,9 @@ We are a team of dedicated engineers providing customers structured guidance to 
 * [Lift and Shift](lift-and-shift-azurechina.md)
 
 ### Customer Facing Apps
-* Digital Marketing
+* [Digital Marketing](customerfacingapp/digital-marketing/)
 * E-commerce
+* Containerize an E-Commerce Site
 
 
 # Contributing
