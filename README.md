@@ -27,8 +27,8 @@ We are a team of dedicated engineers providing customers structured guidance to 
 
 ### Customer Facing Apps
 * [Digital Marketing](customerfacingapp/digital-marketing/)
-* E-commerce
-* Containerize an E-Commerce Site
+* [E-commerce](customerfacingapp/ecommerce/)
+* [Containerize an E-Commerce Site](customerfacingapp/containerizeecommercesite)
 
 
 # Contributing
